@@ -1,0 +1,56 @@
+{
+  "name": "eslint-config-widen",
+  "version": "0.0.1",
+  "description": "Widen's shared ESLint config.",
+  "author": "Widen",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Widen/eslint-config",
+    "directory": "packages/eslint-config-widen"
+  },
+  "homepage": "https://github.com/Widen/eslint-config/tree/master/packages/eslint-config-widen#readme",
+  "files": [
+    "lib"
+  ],
+  "exports": {
+    ".": "./lib/index.js",
+    "./jest": "./lib/jest.js",
+    "./react": "./lib/react.js",
+    "./typescript": "./lib/typescript.js"
+  },
+  "dependencies": {
+    "eslint-config-prettier": "^8.3.0"
+  },
+  "peerDependencies": {
+    "@babel/eslint-parser": "^7.16.5",
+    "@typescript-eslint/eslint-plugin": "^5.7.0",
+    "@typescript-eslint/parser": "^5.7.0",
+    "@widen/eslint-plugin": ">= 2",
+    "eslint": ">= 8",
+    "eslint-plugin-jest": ">= 25",
+    "eslint-plugin-jsx-a11y": ">= 6",
+    "eslint-plugin-react": ">= 7",
+    "eslint-plugin-react-hooks": ">= 4"
+  },
+  "peerDependenciesMeta": {
+    "@typescript-eslint/eslint-plugin": {
+      "optional": true
+    },
+    "@typescript-eslint/parser": {
+      "optional": true
+    },
+    "eslint-plugin-jest": {
+      "optional": true
+    },
+    "eslint-plugin-jsx-a11y": {
+      "optional": true
+    },
+    "eslint-plugin-react": {
+      "optional": true
+    },
+    "eslint-plugin-react-hooks": {
+      "optional": true
+    }
+  }
+}
