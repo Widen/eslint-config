@@ -1,5 +1,6 @@
 import { RuleTester } from 'eslint'
 import rule from '../src/rules/jsx-import'
+import heredoc from 'tsheredoc'
 
 RuleTester.setDefaultConfig({
   parserOptions: {
@@ -16,159 +17,159 @@ new RuleTester().run('jsx-import', rule, {
     // Inserts the jsx pragma and import
     {
       errors: [{ messageId: 'missingPragma' }],
-      input: `
+      code: heredoc`
         var el = <div css={{}} />
-      `.trim(),
-      output: `
+      `,
+      output: heredoc`
         /** @jsx jsx */
         import { jsx } from '@emotion/react'
         var el = <div css={{}} />
-      `.trim(),
+      `,
     },
 
     // Adds a missing import even if the pragma exists
     {
       errors: [{ messageId: 'missingPragma' }],
-      code: `
+      code: heredoc`
         /** @jsx jsx */
         var el = <div css={{}} />
-      `.trim(),
-      output: `
+      `,
+      output: heredoc`
         /** @jsx jsx */
         import { jsx } from '@emotion/react'
         var el = <div css={{}} />
-      `.trim(),
+      `,
     },
     // Adds the jsx pragma and import with an existing @emotion/react import
     {
-      code: `
+      code: heredoc`
         import { css } from '@emotion/react'
         var el = <div css={css\`\`} />
-      `.trim(),
-      output: `
+      `,
+      output: heredoc`
         /** @jsx jsx */
         import { css, jsx } from '@emotion/react'
         var el = <div css={css\`\`} />
-      `.trim(),
+      `,
       errors: [{ messageId: 'missingPragma' }],
     },
     // Adds the jsx pragma and import with a styled import
     {
-      code: `
+      code: heredoc`
         import styled from '@emotion/styled'
         var el = <div css={{}} />
-      `.trim(),
-      output: `
+      `,
+      output: heredoc`
         /** @jsx jsx */
         import { jsx } from '@emotion/react'
         import styled from '@emotion/styled'
         var el = <div css={{}} />
-      `.trim(),
+      `,
       errors: [{ messageId: 'missingPragma' }],
     },
     // Multiple elements with the css prop
     {
-      code: `
+      code: heredoc`
         var el = <div css={{}} />
         var el = <div css={{}} />
-      `.trim(),
-      output: `
+      `,
+      output: heredoc`
         /** @jsx jsx */
         import { jsx } from '@emotion/react'
         var el = <div css={{}} />
         var el = <div css={{}} />
-      `.trim(),
+      `,
       errors: [{ messageId: 'missingPragma' }],
     },
     // Removes unnecessary react imports
     {
-      code: `
+      code: heredoc`
         import React from 'react'
         var el = <div css={{}} />
-      `.trim(),
+      `,
       errors: [{ messageId: 'missingPragma' }],
-      output: `
+      output: heredoc`
         /** @jsx jsx */
         import { jsx } from '@emotion/react'
         var el = <div css={{}} />
-      `.trim(),
+      `,
     },
     {
-      code: `
+      code: heredoc`
         import * as React from 'react'
         var el = <div css={{}} />
-      `.trim(),
-      output: `
+      `,
+      output: heredoc`
         /** @jsx jsx */
         import { jsx } from '@emotion/react'
         var el = <div css={{}} />
-      `.trim(),
+      `,
       errors: [{ messageId: 'missingPragma' }],
     },
     {
-      code: `
+      code: heredoc`
         import React, { Fragment } from 'react'
         var el = <Fragment><div css={{}} /></Fragment>
-      `.trim(),
+      `,
       errors: [{ messageId: 'missingPragma' }],
-      output: `
+      output: heredoc`
         /** @jsx jsx */
         import { jsx } from '@emotion/react'
         import { Fragment } from 'react'
         var el = <Fragment><div css={{}} /></Fragment>
-      `.trim(),
+      `,
     },
     // Retains react imports even if their usage is after the first css prop
     {
-      code: `
+      code: heredoc`
         import React from 'react'
         var el = <div css={{}} />
         React.useEffect()
-      `.trim(),
+      `,
       errors: [{ messageId: 'missingPragma' }],
-      output: `
+      output: heredoc`
         /** @jsx jsx */
         import { jsx } from '@emotion/react'
         import React from 'react'
         var el = <div css={{}} />
         React.useEffect()
-      `.trim(),
+      `,
     },
     {
-      code: `
+      code: heredoc`
         import React from 'react'
         var el = <div css={{}} />
         class MyComponent extends React.Component {}
-      `.trim(),
+      `,
       errors: [{ messageId: 'missingPragma' }],
-      output: `
+      output: heredoc`
         /** @jsx jsx */
         import { jsx } from '@emotion/react'
         import React from 'react'
         var el = <div css={{}} />
         class MyComponent extends React.Component {}
-      `.trim(),
+      `,
     },
   ],
   valid: [
-    `
+    heredoc`
       /** @jsx jsx */
       import { jsx } from '@emotion/react'
       var el = <div css={css\`\`} />
-    `.trim(),
-    `
+    `,
+    heredoc`
       import { css } from '@emotion/react'
       var el = <div className={css\`\`} />
-    `.trim(),
-    `
+    `,
+    heredoc`
       import { css } from 'styled-components'
       var el = <div className={css\`\`} />
-    `.trim(),
-    `
+    `,
+    heredoc`
       /** @jsx jsx */
       import { jsx } from '@emotion/react'
       var el = <div css={{}} />
-    `.trim(),
+    `,
 
     // No applicable code
     'const a = 1',

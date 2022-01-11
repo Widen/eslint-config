@@ -1,5 +1,6 @@
 import { RuleTester } from 'eslint'
 import rule from '../src/rules/jsx-fragments'
+import heredoc from 'tsheredoc'
 
 RuleTester.setDefaultConfig({
   parserOptions: {
@@ -14,88 +15,88 @@ RuleTester.setDefaultConfig({
 new RuleTester().run('jsx-fragments', rule, {
   invalid: [
     {
-      code: `
+      code: heredoc`
         import React from 'react';
         <>foo</>
-      `.trim(),
-      output: `
+      `,
+      output: heredoc`
         import React from 'react';
         <React.Fragment>foo</React.Fragment>
-      `.trim(),
+      `,
       errors: [{ messageId: 'longForm' }],
     },
     {
-      code: `
+      code: heredoc`
         import * as React from 'react';
         <>foo</>
-      `.trim(),
-      output: `
+      `,
+      output: heredoc`
         import * as React from 'react';
         <React.Fragment>foo</React.Fragment>
-      `.trim(),
+      `,
       errors: [{ messageId: 'longForm' }],
     },
     {
-      code: `
+      code: heredoc`
         import { Fragment } from 'react';
         <>foo</>
-      `.trim(),
-      output: `
+      `,
+      output: heredoc`
         import { Fragment } from 'react';
         <Fragment>foo</Fragment>
-      `.trim(),
+      `,
       errors: [{ messageId: 'longForm' }],
     },
     {
-      code: `
+      code: heredoc`
         import { Fragment as Frag } from 'react';
         <>foo</>
-      `.trim(),
-      output: `
+      `,
+      output: heredoc`
         import { Fragment as Frag } from 'react';
         <Frag>foo</Frag>
-      `.trim(),
+      `,
       errors: [{ messageId: 'longForm' }],
     },
     {
-      code: `
+      code: heredoc`
         /** @jsx jsx */
         import { jsx } from '@emotion/react';
         <>foo</>
-      `.trim(),
-      output: `
+      `,
+      output: heredoc`
         /** @jsx jsx */
         import { jsx } from '@emotion/react';
         import { Fragment } from 'react';
         <Fragment>foo</Fragment>
-      `.trim(),
+      `,
       errors: [{ messageId: 'missingImport' }, { messageId: 'longForm' }],
     },
     {
-      code: `
+      code: heredoc`
         const a = 1;
         <>foo</>
-      `.trim(),
-      output: `
+      `,
+      output: heredoc`
         import { Fragment } from 'react';
         const a = 1;
         <Fragment>foo</Fragment>
-      `.trim(),
+      `,
       errors: [{ messageId: 'missingImport' }, { messageId: 'longForm' }],
     },
     {
-      code: `
+      code: heredoc`
         /** @jsx jsx */
         import { jsx } from '@emotion/react';
         import { useEffect } from 'react';
-        <>output:foo</>
-      `.trim(),
-      output: `
+        <>foo</>
+      `,
+      output: heredoc`
         /** @jsx jsx */
         import { jsx } from '@emotion/react';
         import { useEffect, Fragment } from 'react';
         <Fragment>foo</Fragment>
-      `.trim(),
+      `,
       errors: [{ messageId: 'missingImport' }, { messageId: 'longForm' }],
     },
   ],
@@ -103,19 +104,19 @@ new RuleTester().run('jsx-fragments', rule, {
     `
       import React from 'react';
       <React.Fragment>foo</React.Fragment>
-    `.trim(),
+    `,
     `
       import * as React from 'react';
       <React.Fragment>foo</React.Fragment>
-    `.trim(),
+    `,
     `
       import { Fragment } from 'react';
       <Fragment>foo</Fragment>
-    `.trim(),
+    `,
     `
       import { Fragment as Frag } from 'react';
       <Frag>foo</Frag>
-    `.trim(),
+    `,
 
     // No fragments
     'const a = 1',
