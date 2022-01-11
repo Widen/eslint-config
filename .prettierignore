@@ -4,3 +4,6 @@
 
 # Changelogs are managed by changesets
 CHANGELOG.md
+
+# Outputs
+lib/
