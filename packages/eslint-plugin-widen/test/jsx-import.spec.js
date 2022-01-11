@@ -1,6 +1,6 @@
 import { RuleTester } from 'eslint'
-import rule from '../src/rules/jsx-import'
 import heredoc from 'tsheredoc'
+import rule from '../src/rules/jsx-import'
 
 RuleTester.setDefaultConfig({
   parserOptions: {
@@ -16,10 +16,10 @@ new RuleTester().run('jsx-import', rule, {
   invalid: [
     // Inserts the jsx pragma and import
     {
-      errors: [{ messageId: 'missingPragma' }],
       code: heredoc`
         var el = <div css={{}} />
       `,
+      errors: [{ messageId: 'missingPragma' }],
       output: heredoc`
         /** @jsx jsx */
         import { jsx } from '@emotion/react'
@@ -29,11 +29,11 @@ new RuleTester().run('jsx-import', rule, {
 
     // Adds a missing import even if the pragma exists
     {
-      errors: [{ messageId: 'missingPragma' }],
       code: heredoc`
         /** @jsx jsx */
         var el = <div css={{}} />
       `,
+      errors: [{ messageId: 'missingPragma' }],
       output: heredoc`
         /** @jsx jsx */
         import { jsx } from '@emotion/react'
@@ -46,12 +46,12 @@ new RuleTester().run('jsx-import', rule, {
         import { css } from '@emotion/react'
         var el = <div css={css\`\`} />
       `,
+      errors: [{ messageId: 'missingPragma' }],
       output: heredoc`
         /** @jsx jsx */
         import { css, jsx } from '@emotion/react'
         var el = <div css={css\`\`} />
       `,
-      errors: [{ messageId: 'missingPragma' }],
     },
     // Adds the jsx pragma and import with a styled import
     {
@@ -59,13 +59,13 @@ new RuleTester().run('jsx-import', rule, {
         import styled from '@emotion/styled'
         var el = <div css={{}} />
       `,
+      errors: [{ messageId: 'missingPragma' }],
       output: heredoc`
         /** @jsx jsx */
         import { jsx } from '@emotion/react'
         import styled from '@emotion/styled'
         var el = <div css={{}} />
       `,
-      errors: [{ messageId: 'missingPragma' }],
     },
     // Multiple elements with the css prop
     {
@@ -73,13 +73,13 @@ new RuleTester().run('jsx-import', rule, {
         var el = <div css={{}} />
         var el = <div css={{}} />
       `,
+      errors: [{ messageId: 'missingPragma' }],
       output: heredoc`
         /** @jsx jsx */
         import { jsx } from '@emotion/react'
         var el = <div css={{}} />
         var el = <div css={{}} />
       `,
-      errors: [{ messageId: 'missingPragma' }],
     },
     // Removes unnecessary react imports
     {
@@ -99,12 +99,12 @@ new RuleTester().run('jsx-import', rule, {
         import * as React from 'react'
         var el = <div css={{}} />
       `,
+      errors: [{ messageId: 'missingPragma' }],
       output: heredoc`
         /** @jsx jsx */
         import { jsx } from '@emotion/react'
         var el = <div css={{}} />
       `,
-      errors: [{ messageId: 'missingPragma' }],
     },
     {
       code: heredoc`

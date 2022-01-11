@@ -1,6 +1,6 @@
 import { RuleTester } from 'eslint'
-import rule from '../src/rules/jsx-fragments'
 import heredoc from 'tsheredoc'
+import rule from '../src/rules/jsx-fragments'
 
 RuleTester.setDefaultConfig({
   parserOptions: {
@@ -19,44 +19,44 @@ new RuleTester().run('jsx-fragments', rule, {
         import React from 'react';
         <>foo</>
       `,
+      errors: [{ messageId: 'longForm' }],
       output: heredoc`
         import React from 'react';
         <React.Fragment>foo</React.Fragment>
       `,
-      errors: [{ messageId: 'longForm' }],
     },
     {
       code: heredoc`
         import * as React from 'react';
         <>foo</>
       `,
+      errors: [{ messageId: 'longForm' }],
       output: heredoc`
         import * as React from 'react';
         <React.Fragment>foo</React.Fragment>
       `,
-      errors: [{ messageId: 'longForm' }],
     },
     {
       code: heredoc`
         import { Fragment } from 'react';
         <>foo</>
       `,
+      errors: [{ messageId: 'longForm' }],
       output: heredoc`
         import { Fragment } from 'react';
         <Fragment>foo</Fragment>
       `,
-      errors: [{ messageId: 'longForm' }],
     },
     {
       code: heredoc`
         import { Fragment as Frag } from 'react';
         <>foo</>
       `,
+      errors: [{ messageId: 'longForm' }],
       output: heredoc`
         import { Fragment as Frag } from 'react';
         <Frag>foo</Frag>
       `,
-      errors: [{ messageId: 'longForm' }],
     },
     {
       code: heredoc`
@@ -64,25 +64,25 @@ new RuleTester().run('jsx-fragments', rule, {
         import { jsx } from '@emotion/react';
         <>foo</>
       `,
+      errors: [{ messageId: 'missingImport' }, { messageId: 'longForm' }],
       output: heredoc`
         /** @jsx jsx */
         import { jsx } from '@emotion/react';
         import { Fragment } from 'react';
         <Fragment>foo</Fragment>
       `,
-      errors: [{ messageId: 'missingImport' }, { messageId: 'longForm' }],
     },
     {
       code: heredoc`
         const a = 1;
         <>foo</>
       `,
+      errors: [{ messageId: 'missingImport' }, { messageId: 'longForm' }],
       output: heredoc`
         import { Fragment } from 'react';
         const a = 1;
         <Fragment>foo</Fragment>
       `,
-      errors: [{ messageId: 'missingImport' }, { messageId: 'longForm' }],
     },
     {
       code: heredoc`
@@ -91,13 +91,13 @@ new RuleTester().run('jsx-fragments', rule, {
         import { useEffect } from 'react';
         <>foo</>
       `,
+      errors: [{ messageId: 'missingImport' }, { messageId: 'longForm' }],
       output: heredoc`
         /** @jsx jsx */
         import { jsx } from '@emotion/react';
         import { useEffect, Fragment } from 'react';
         <Fragment>foo</Fragment>
       `,
-      errors: [{ messageId: 'missingImport' }, { messageId: 'longForm' }],
     },
   ],
   valid: [

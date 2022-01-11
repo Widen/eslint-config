@@ -21,8 +21,6 @@ export = {
   ],
   plugins: ['react'],
   rules: {
-    'widen/jsx-fragments': 'error',
-    'widen/jsx-import': 'error',
     'jsx-a11y/click-events-have-key-events': 'warn',
     'jsx-a11y/label-has-associated-control': [
       'error',
@@ -57,6 +55,8 @@ export = {
         ignoreCase: true,
       },
     ],
+    'widen/jsx-fragments': 'error',
+    'widen/jsx-import': 'error',
   },
   settings: {
     react: {

@@ -2625,7 +2625,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/experimental-utils@npm:5.9.1":
+"@typescript-eslint/experimental-utils@npm:5.9.1, @typescript-eslint/experimental-utils@npm:^5.9.0":
   version: 5.9.1
   resolution: "@typescript-eslint/experimental-utils@npm:5.9.1"
   dependencies:
@@ -3955,11 +3955,23 @@ __metadata:
     "@typescript-eslint/eslint-plugin": ^5.9.1
     "@typescript-eslint/parser": ^5.9.1
     eslint: ^8.6.0
+    eslint-plugin-sort: ^2.3.1
     jest: ^27.4.7
     prettier: ^2.5.1
     typescript: ^4.5.4
   languageName: unknown
   linkType: soft
+
+"eslint-plugin-sort@npm:^2.3.1":
+  version: 2.3.1
+  resolution: "eslint-plugin-sort@npm:2.3.1"
+  dependencies:
+    "@typescript-eslint/experimental-utils": ^5.9.0
+  peerDependencies:
+    eslint: ">=6"
+  checksum: 16e2448b61231979c01e0891bda5e7553fe08a50bba4b6a1719444075d3807b1449d7a4558e3709bca2add312cdd86bb27d71aec26e427509b17dc17e33e4f11
+  languageName: node
+  linkType: hard
 
 "eslint-plugin-widen@workspace:packages/eslint-plugin-widen":
   version: 0.0.0-use.local
