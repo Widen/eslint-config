@@ -1,21 +1,13 @@
 {
-  "name": "npm-package-template",
-  "version": "0.0.1",
-  "description": "{{description}}",
+  "name": "eslint-config",
+  "description": "",
+  "private": true,
   "author": "Widen",
   "license": "ISC",
-  "packageManager": "yarn@3.1.0",
-  "repository": "github:Widen/npm-package-template",
-  "homepage": "https://github.com/Widen/npm-package-template#readme",
-  "bugs": {
-    "url": "https://github.com/Widen/npm-package-template/issues"
-  },
-  "keywords": [],
-  "main": "./lib/index.js",
-  "types": "lib/index.d.ts",
-  "files": [
-    "src",
-    "lib"
+  "packageManager": "yarn@3.1.1",
+  "repository": "github:Widen/eslint-config",
+  "workspaces": [
+    "packages/*"
   ],
   "scripts": {
     "lint": "eslint .",
