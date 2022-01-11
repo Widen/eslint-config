@@ -5,12 +5,12 @@ export = {
     jest: true,
     node: true,
   },
-  extends: ['eslint:recommended', 'plugin:@widen/recommended', 'prettier'],
+  extends: ['eslint:recommended', 'plugin:sort/recommended', 'prettier'],
   parser: '@babel/eslint-parser',
   parserOptions: {
     requireConfigFile: false,
   },
-  plugins: ['@widen'],
+  plugins: ['widen'],
   rules: {
     eqeqeq: [
       'error',
