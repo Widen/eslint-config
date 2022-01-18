@@ -13,8 +13,7 @@
     "format": "prettier --write .",
     "lint": "eslint .",
     "test": "jest",
-    "ts": "tsc -b",
-    "release": "./scripts/release.sh"
+    "ts": "tsc -b"
   },
   "devDependencies": {
     "@babel/core": "^7.16.7",

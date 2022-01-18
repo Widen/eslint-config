@@ -6,5 +6,5 @@ if [[ -z "${CI}" ]]; then
   exit 1
 fi
 
-yarn tsc -p tsconfig.build.json
+yarn ts
 yarn changeset publish
