@@ -3926,7 +3926,7 @@ __metadata:
     eslint-plugin-react: ">= 7"
     eslint-plugin-react-hooks: ">= 4"
     eslint-plugin-sort: ">= 2"
-    eslint-plugin-widen: ">= 1"
+    eslint-plugin-widen: ">=0.1.0"
   peerDependenciesMeta:
     "@typescript-eslint/eslint-plugin":
       optional: true
