@@ -1,10 +1,14 @@
+# Editors
 .vscode/
-node_modules/
-lib/
 
 # Yarn
+node_modules/
 .yarn/*
 !.yarn/releases
 !.yarn/plugins
 !.yarn/sdks
 !.yarn/versions
+
+# Outputs
+lib/
+tsconfig.tsbuildinfo
