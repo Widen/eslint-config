@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-widen",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Widen's own ESLint plugin containing custom lint rules for our code.",
   "author": "Widen",
   "license": "ISC",
