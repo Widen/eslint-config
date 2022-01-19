@@ -35,6 +35,9 @@
     "eslint-plugin-widen": ">=0.1.0"
   },
   "peerDependenciesMeta": {
+    "@babel/eslint-parser": {
+      "optional": true
+    },
     "@typescript-eslint/eslint-plugin": {
       "optional": true
     },
