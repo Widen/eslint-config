@@ -3928,8 +3928,6 @@ __metadata:
     eslint-plugin-sort: ">= 2"
     eslint-plugin-widen: ">=0.1.0"
   peerDependenciesMeta:
-    "@babel/eslint-parser":
-      optional: true
     "@typescript-eslint/eslint-plugin":
       optional: true
     "@typescript-eslint/parser":
