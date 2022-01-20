@@ -1,5 +1,11 @@
 # eslint-config-widen
 
+## 0.2.1
+
+### Patch Changes
+
+- fcb1916: Add missing peer dependency.
+
 ## 0.2.0
 
 ### Minor Changes
