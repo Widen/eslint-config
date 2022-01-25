@@ -1,5 +1,6 @@
 # Widen ESLint
 
+[![Build](https://github.com/Widen/eslint-config/actions/workflows/build.yml/badge.svg)](https://github.com/Widen/eslint-config/actions/workflows/build.yml)
 [![changesets](https://img.shields.io/badge/maintained%20with-changesets-blue)](https://github.com/atlassian/changesets)
 
 Widen's shared ESLint config and plugins.
