@@ -1,5 +1,11 @@
 # eslint-config-widen
 
+## 0.3.0
+
+### Minor Changes
+
+- 4b10644: Sort `@widen` imports and exports after dependencies.
+
 ## 0.2.1
 
 ### Patch Changes
