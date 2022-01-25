@@ -40,5 +40,30 @@ export = {
         destructuring: 'all',
       },
     ],
+    'sort/exports': [
+      'warn',
+      {
+        groups: [
+          { order: 6, type: 'default' },
+          { order: 5, type: 'sourceless' },
+          { order: 2, regex: '^@widen\\/' },
+          { order: 4, regex: '^\\.+\\/' },
+          { order: 1, type: 'dependency' },
+          { order: 3, type: 'other' },
+        ],
+      },
+    ],
+    'sort/imports': [
+      'warn',
+      {
+        groups: [
+          { order: 1, type: 'side-effect' },
+          { order: 3, regex: '^@widen\\/' },
+          { order: 4, regex: '^\\.+\\/' },
+          { order: 2, type: 'dependency' },
+          { order: 5, type: 'other' },
+        ],
+      },
+    ],
   },
 }
