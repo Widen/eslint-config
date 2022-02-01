@@ -24,6 +24,7 @@ export = {
         ],
         '@typescript-eslint/no-var-requires': 'off',
         '@typescript-eslint/prefer-interface': 'off',
+        'sort/type-properties': 'warn',
       },
     },
   ],
