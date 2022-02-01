@@ -59,9 +59,9 @@ export = {
         groups: [
           { order: 1, type: 'side-effect' },
           { order: 3, regex: '^@widen\\/' },
-          { order: 4, regex: '^\\.+' },
+          { order: 5, regex: '^\\.+' },
           { order: 2, type: 'dependency' },
-          { order: 5, type: 'other' },
+          { order: 4, type: 'other' },
         ],
       },
     ],
