@@ -1,5 +1,16 @@
 # eslint-config-widen
 
+## 0.4.0
+
+### Minor Changes
+
+- 1fd905a: Automatically enable the type property sorting rule.
+
+### Patch Changes
+
+- 1fd905a: Properly detect `.` or `..` as relative imports.
+- 1fd905a: Fix issue with relative imports not sorting to the end.
+
 ## 0.3.0
 
 ### Minor Changes
