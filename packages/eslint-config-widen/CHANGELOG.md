@@ -1,5 +1,12 @@
 # eslint-config-widen
 
+## 0.5.0
+
+### Minor Changes
+
+- 43fcc99: Enable the `react/jsx-curly-brace-presence` rule to automatically
+  remove unnecessary braces from JSX props.
+
 ## 0.4.0
 
 ### Minor Changes
