@@ -37,6 +37,7 @@ export = {
     'react/button-has-type': 'warn',
     // https://reactjs.org/docs/jsx-in-depth.html#props-default-to-true
     'react/jsx-boolean-value': ['warn', 'always'],
+    'react/jsx-curly-brace-presence': ['warn', 'never'],
     'react/jsx-first-prop-new-line': ['error', 'multiline'],
     'react/jsx-no-duplicate-props': 'error',
     'react/jsx-sort-props': [
