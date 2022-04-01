@@ -12,6 +12,9 @@ export = {
   },
   plugins: ['widen'],
   rules: {
+    camelcase: 'warn',
+    'default-param-last': 'error',
+    'dot-notation': 'error',
     eqeqeq: [
       'error',
       'always',
@@ -19,10 +22,15 @@ export = {
         null: 'ignore',
       },
     ],
-    'no-console': 'off',
+    'no-console': ['error', { allow: ['error'] }],
     'no-dupe-args': 'error',
     'no-duplicate-imports': 'error',
+    'no-else-return': 'error',
+    'no-empty': ['error', { allowEmptyCatch: true }],
     'no-extra-bind': 'error',
+    'no-param-reassign': 'error',
+    'no-return-await': 'error',
+    'no-template-curly-in-string': 'error',
     'no-unneeded-ternary': 'error',
     'no-unused-expressions': 'off',
     'no-unused-vars': [
@@ -32,6 +40,7 @@ export = {
         varsIgnorePattern: '^_',
       },
     ],
+    'no-useless-computed-key': 'error',
     'no-var': 'error',
     'object-shorthand': 'error',
     'prefer-const': [
@@ -40,6 +49,7 @@ export = {
         destructuring: 'all',
       },
     ],
+    'require-await': 'error',
     'sort/exports': [
       'warn',
       {
