@@ -12,7 +12,6 @@ export = {
   },
   plugins: ['widen'],
   rules: {
-    camelcase: 'warn',
     'default-param-last': 'error',
     'dot-notation': 'error',
     eqeqeq: [
