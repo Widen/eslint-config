@@ -1,5 +1,11 @@
 # eslint-config-widen
 
+## 0.6.1
+
+### Patch Changes
+
+- dac6d42: Remove `camelcase` rule which was too noisy.
+
 ## 0.6.0
 
 ### Minor Changes
