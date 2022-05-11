@@ -1,5 +1,13 @@
 # eslint-config-widen
 
+## 0.6.2
+
+### Patch Changes
+
+- 004c055: Ignore unused variables in destructuring patterns when they start
+  with an underscore. This has worked historically for JavaScript, but it was
+  not working properly in TypeScript files.
+
 ## 0.6.1
 
 ### Patch Changes
