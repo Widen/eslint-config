@@ -19,7 +19,8 @@ export = {
         '@typescript-eslint/no-unused-vars': [
           'error',
           {
-            argsIgnorePattern: '^_',
+            ignoreRestSiblings: true,
+            varsIgnorePattern: '^_',
           },
         ],
         '@typescript-eslint/no-var-requires': 'off',
