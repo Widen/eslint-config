@@ -18,9 +18,9 @@
     "eslint": ">= 8"
   },
   "devDependencies": {
-    "@types/eslint": "^8.2.2",
+    "@types/eslint": "^8.4.3",
     "@types/estree-jsx": "^0.0.1",
-    "eslint": "^8.6.0",
+    "eslint": "^8.17.0",
     "tsheredoc": "^1.0.1"
   }
 }
