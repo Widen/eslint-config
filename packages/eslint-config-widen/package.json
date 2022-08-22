@@ -16,6 +16,7 @@
   "exports": {
     ".": "./lib/index.js",
     "./jest": "./lib/jest.js",
+    "./playwright": "./lib/playwright.js",
     "./react": "./lib/react.js",
     "./typescript": "./lib/typescript.js"
   },
@@ -29,6 +30,7 @@
     "eslint": ">= 8",
     "eslint-plugin-jest": ">= 25",
     "eslint-plugin-jsx-a11y": ">= 6",
+    "eslint-plugin-playwright": ">=0.10.0",
     "eslint-plugin-react": ">= 7",
     "eslint-plugin-react-hooks": ">= 4",
     "eslint-plugin-sort": ">= 2",
@@ -45,6 +47,9 @@
       "optional": true
     },
     "eslint-plugin-jsx-a11y": {
+      "optional": true
+    },
+    "eslint-plugin-playwright": {
       "optional": true
     },
     "eslint-plugin-react": {

@@ -9,7 +9,7 @@ Enforce usage of JSX fragment longhand to allow for compatibility with Emotion.
 
 Example of **incorrect** code for this rule:
 
-```js
+```javascript
 /** @jsx jsx */
 import { jsx } from '@emotion/react'
 
@@ -20,7 +20,7 @@ function MyComponent() {
 
 Example of **correct** code for this rule:
 
-```js
+```javascript
 /** @jsx jsx */
 import { jsx } from '@emotion/react'
 import { useEffect, Fragment } from 'react'
