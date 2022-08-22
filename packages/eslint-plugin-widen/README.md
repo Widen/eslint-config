@@ -6,7 +6,7 @@ Widen's own ESLint plugin containing custom lint rules for our code.
 
 ## Installation
 
-```sh
+```bash
 yarn add --dev eslint-plugin-widen
 ```
 

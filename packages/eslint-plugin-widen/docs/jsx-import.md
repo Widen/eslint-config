@@ -15,7 +15,7 @@ Enforces all files to use the `jsx` pragma from `@emotion/react` when using the
 
 Example of **incorrect** code for this rule:
 
-```js
+```javascript
 import { css } from '@emotion/react'
 import React from 'react'
 
@@ -30,7 +30,7 @@ function MyComponent() {
 
 Example of **correct** code for this rule:
 
-```js
+```javascript
 /** @jsx jsx */
 import { css, jsx } from '@emotion/react'
 
