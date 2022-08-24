@@ -1,5 +1,12 @@
 # eslint-config-widen
 
+## 0.7.0
+
+### Minor Changes
+
+- 042b316: Add `widen/playwright` config to allow easily configuring the
+  Playwright ESLint config.
+
 ## 0.6.2
 
 ### Patch Changes
