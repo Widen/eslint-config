@@ -1,5 +1,13 @@
 # eslint-config-widen
 
+## 1.0.0
+
+### Patch Changes
+
+- Updated dependencies [f358429]
+- Updated dependencies [c04b099]
+  - eslint-plugin-widen@1.0.0
+
 ## 0.7.0
 
 ### Minor Changes
