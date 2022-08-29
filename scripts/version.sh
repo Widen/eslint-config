@@ -12,4 +12,4 @@ yarn changeset version
 # yarn.lock stores dependent package versions, so we need
 # to update it before committing or CI will fail due to
 # yarn.lock being out of date.
-yarn
+yarn install --no-immutable
