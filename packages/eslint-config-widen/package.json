@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-widen",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Widen's shared ESLint config.",
   "author": "Widen",
   "license": "ISC",
