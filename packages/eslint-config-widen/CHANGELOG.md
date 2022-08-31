@@ -1,5 +1,12 @@
 # eslint-config-widen
 
+## 1.0.1
+
+### Patch Changes
+
+- b38d77e: Remove `overrides` from `widen/playwright` configuration which was
+  incorrect.
+
 ## 1.0.0
 
 ### Patch Changes
