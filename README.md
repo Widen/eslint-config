@@ -37,7 +37,7 @@ If you don't need a specific configuration, simply remove it from the list.
       "extends": "widen/playwright"
     },
     {
-      "files": ["frontend/**/*.spec.js"],
+      "files": ["frontend/**"],
       "extends": "widen/jest"
     }
   ]
