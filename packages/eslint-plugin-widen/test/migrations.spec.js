@@ -56,27 +56,52 @@ new RuleTester().run('Patterns 18', rule, {
     // Props
     {
       code: '<Badge color="purple" />',
-      errors: [{ messageId: 'badgeColor' }],
-      output: '<Badge color="teal" />',
+      errors: [{ messageId: 'statusProp' }],
+      output: '<Badge status="info" />',
+    },
+    {
+      code: '<Badge color="red" />',
+      errors: [{ messageId: 'statusProp' }],
+      output: '<Badge status="error" />',
+    },
+    {
+      code: '<Badge color="green" />',
+      errors: [{ messageId: 'statusProp' }],
+      output: '<Badge status="success" />',
+    },
+    {
+      code: '<Badge color="blue" />',
+      errors: [{ messageId: 'statusProp' }],
+      output: '<Badge status="info" />',
+    },
+    {
+      code: '<Badge color="yellow" />',
+      errors: [{ messageId: 'statusProp' }],
+      output: '<Badge status="warning" />',
+    },
+    {
+      code: '<Badge color="gray" />',
+      errors: [{ messageId: 'statusProp' }],
+      output: '<Badge status="inactive" />',
     },
     {
       code: '<Callout color="red" />',
-      errors: [{ messageId: 'calloutColor' }],
+      errors: [{ messageId: 'statusProp' }],
       output: '<Callout status="error" />',
     },
     {
       code: '<Callout color="green" />',
-      errors: [{ messageId: 'calloutColor' }],
+      errors: [{ messageId: 'statusProp' }],
       output: '<Callout status="success" />',
     },
     {
       code: '<Callout color="blue" />',
-      errors: [{ messageId: 'calloutColor' }],
+      errors: [{ messageId: 'statusProp' }],
       output: '<Callout status="info" />',
     },
     {
       code: '<Callout color="yellow" />',
-      errors: [{ messageId: 'calloutColor' }],
+      errors: [{ messageId: 'statusProp' }],
       output: '<Callout status="warning" />',
     },
     // Color panel
@@ -98,8 +123,10 @@ new RuleTester().run('Patterns 18', rule, {
     'const foo = css`height: var(--p-snackbar-height);`',
     '<div theme="dark" />',
     '<div color="blue" />',
-    '<Badge color="blue" />',
+    '<Badge status="info" />',
     '<Badge />',
+    '<Callout status="error" />',
+    '<Callout />',
     '<ColorPanel css={foo} />',
     '<ColorPanel />',
   ],

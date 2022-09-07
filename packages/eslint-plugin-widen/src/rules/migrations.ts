@@ -1,6 +1,7 @@
 import { Rule } from 'eslint'
 import * as ESTree from 'estree'
 import * as ESTreeJSX from 'estree-jsx'
+import { docsURL } from '../utils'
 
 const oldColors = new Set([
   'gray15',
@@ -129,9 +130,11 @@ function reportCssVariable(
   }
 }
 
-const calloutColorMap: Record<string, string> = {
+const statusMap: Record<string, string> = {
   blue: 'info',
+  gray: 'inactive',
   green: 'success',
+  purple: 'info',
   red: 'error',
   yellow: 'warning',
 }
@@ -159,26 +162,18 @@ export default {
         const elementName = element.name.name
         const { value } = attribute
 
-        if (elementName === 'Badge') {
-          if (value?.type === 'Literal' && value.value === 'purple') {
-            context.report({
-              fix: (fixer) => fixer.replaceText(value, '"teal"'),
-              messageId: 'badgeColor',
-              node,
-            })
-          }
-        } else if (elementName === 'Callout') {
+        if (elementName === 'Badge' || elementName === 'Callout') {
           if (value?.type !== 'Literal') return
           const color = value.value ?? ''
 
-          if (typeof color === 'string' && color in calloutColorMap) {
+          if (typeof color === 'string' && color in statusMap) {
             context.report({
               fix: (fixer) =>
                 fixer.replaceText(
                   attribute as unknown as ESTree.Node,
-                  'status="' + calloutColorMap[color] + '"'
+                  'status="' + statusMap[color] + '"'
                 ),
-              messageId: 'calloutColor',
+              messageId: 'statusProp',
               node,
             })
           }
@@ -208,8 +203,7 @@ export default {
     },
     fixable: 'code',
     messages: {
-      badgeColor: 'Purple badges have been replaced with teal.',
-      calloutColor: 'Callout color has been renamed to status.',
+      statusProp: 'This prop has been renamed to status.',
       colorPanelColor: 'Color panels no longer accept a color.',
       cssColor: 'Unexpected use of CSS color variable.',
       jsColor: 'Unexpected use of JS color variable.',
