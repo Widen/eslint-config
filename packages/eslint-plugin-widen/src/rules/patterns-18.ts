@@ -1,7 +1,6 @@
 import { Rule } from 'eslint'
 import * as ESTree from 'estree'
 import * as ESTreeJSX from 'estree-jsx'
-import { docsURL } from '../utils'
 
 const oldColors = new Set([
   'gray15',
