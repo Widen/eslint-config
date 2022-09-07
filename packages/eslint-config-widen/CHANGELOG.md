@@ -1,5 +1,12 @@
 # eslint-config-widen
 
+## 1.0.2
+
+### Patch Changes
+
+- 79ca703: Ignore errors for `react/no-unknown-property` when using the `css`
+  prop.
+
 ## 1.0.1
 
 ### Patch Changes
