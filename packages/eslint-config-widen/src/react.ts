@@ -49,6 +49,7 @@ export = {
     ],
     'react/no-find-dom-node': 'warn',
     'react/no-unescaped-entities': 'off',
+    'react/no-unknown-property': ['error', { ignore: ['css'] }],
     'react/self-closing-comp': 'warn',
     'react/sort-prop-types': [
       'error',
