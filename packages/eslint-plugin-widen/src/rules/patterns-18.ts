@@ -198,15 +198,12 @@ export default {
     }
   },
   meta: {
-    docs: {
-      url: docsURL('migrations'),
-    },
     fixable: 'code',
     messages: {
-      statusProp: 'This prop has been renamed to status.',
       colorPanelColor: 'Color panels no longer accept a color.',
       cssColor: 'Unexpected use of CSS color variable.',
       jsColor: 'Unexpected use of JS color variable.',
+      statusProp: 'This prop has been renamed to status.',
     },
     type: 'problem',
   },

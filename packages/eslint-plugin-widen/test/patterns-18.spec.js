@@ -1,5 +1,5 @@
 import { RuleTester } from 'eslint'
-import rule from '../src/rules/migrations'
+import rule from '../src/rules/patterns-18'
 
 RuleTester.setDefaultConfig({
   parserOptions: {
@@ -11,7 +11,7 @@ RuleTester.setDefaultConfig({
   },
 })
 
-new RuleTester().run('Patterns 18', rule, {
+new RuleTester().run('patterns-18', rule, {
   invalid: [
     // JS variables
     {

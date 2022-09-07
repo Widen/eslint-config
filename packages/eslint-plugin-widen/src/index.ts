@@ -1,11 +1,11 @@
 import jsxFragments from './rules/jsx-fragments'
 import jsxImport from './rules/jsx-import'
-import migrations from './rules/migrations'
+import patterns18 from './rules/patterns-18'
 
 export = {
   rules: {
     'jsx-fragments': jsxFragments,
     'jsx-import': jsxImport,
-    migrations,
+    'patterns-18': patterns18,
   },
 }
