@@ -203,6 +203,9 @@ export default {
     }
   },
   meta: {
+    docs: {
+      url: docsURL('migrations'),
+    },
     fixable: 'code',
     messages: {
       badgeColor: 'Purple badges have been replaced with teal.',
