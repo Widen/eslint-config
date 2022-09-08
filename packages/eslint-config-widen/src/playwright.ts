@@ -2,6 +2,10 @@ export = {
   extends: ['plugin:playwright/playwright-test'],
   plugins: ['playwright'],
   rules: {
+    'playwright/missing-playwright-await': [
+      'error',
+      { customMatchers: ['toBeAccessible'] },
+    ],
     'playwright/prefer-lowercase-title': [
       'warn',
       { ignoreTopLevelDescribe: true },
