@@ -1,5 +1,11 @@
 # eslint-config-widen
 
+## 1.0.3
+
+### Patch Changes
+
+- 4388b29: Rename `<Badge>` `color` prop to `status`.
+
 ## 1.0.2
 
 ### Patch Changes
