@@ -1,5 +1,11 @@
 # eslint-config-widen
 
+## 1.1.0
+
+### Minor Changes
+
+- b3d51d5: Add more Playwright rules
+
 ## 1.0.3
 
 ### Patch Changes
