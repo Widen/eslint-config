@@ -1,5 +1,11 @@
 # eslint-plugin-widen
 
+## 1.1.1
+
+### Patch Changes
+
+- 235a3c6: Remove npmRegistryServer
+
 ## 1.1.0
 
 ### Minor Changes
