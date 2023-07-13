@@ -1,5 +1,13 @@
 # eslint-config-widen
 
+## 2.0.1
+
+### Patch Changes
+
+- 235a3c6: Remove npmRegistryServer
+- Updated dependencies [235a3c6]
+  - eslint-plugin-widen@1.1.1
+
 ## 2.0.0
 
 ### Minor Changes
