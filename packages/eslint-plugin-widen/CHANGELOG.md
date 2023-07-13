@@ -1,5 +1,11 @@
 # eslint-plugin-widen
 
+## 1.1.0
+
+### Minor Changes
+
+- 485da96: Update versions
+
 ## 1.0.0
 
 ### Major Changes
