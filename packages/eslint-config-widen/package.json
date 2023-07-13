@@ -21,7 +21,7 @@
     "./typescript": "./lib/typescript.js"
   },
   "dependencies": {
-    "eslint-config-prettier": "^8.5.0"
+    "eslint-config-prettier": "^8.8.0"
   },
   "peerDependencies": {
     "@babel/eslint-parser": "^7.16.5",
