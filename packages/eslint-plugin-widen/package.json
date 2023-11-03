@@ -1,26 +1,26 @@
 {
-  "name": "eslint-plugin-widen",
-  "version": "1.1.1",
-  "description": "Widen's own ESLint plugin containing custom lint rules for our code.",
   "author": "Widen",
-  "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Widen/eslint-config",
-    "directory": "packages/eslint-plugin-widen"
+  "description": "Widen's own ESLint plugin containing custom lint rules for our code.",
+  "devDependencies": {
+    "@types/eslint": "^8.44.6",
+    "@types/estree-jsx": "^1.0.2",
+    "eslint": "^8.52.0",
+    "tsheredoc": "^1.0.1"
   },
-  "homepage": "https://github.com/Widen/eslint-config/tree/master/packages/eslint-plugin-widen#readme",
   "exports": "./lib/index.js",
   "files": [
     "lib"
   ],
+  "homepage": "https://github.com/Widen/eslint-config/tree/master/packages/eslint-plugin-widen#readme",
+  "license": "ISC",
+  "name": "eslint-plugin-widen",
   "peerDependencies": {
     "eslint": ">= 8"
   },
-  "devDependencies": {
-    "@types/eslint": "^8.44.0",
-    "@types/estree-jsx": "^0.0.1",
-    "eslint": "^8.44.0",
-    "tsheredoc": "^1.0.1"
-  }
+  "repository": {
+    "directory": "packages/eslint-plugin-widen",
+    "type": "git",
+    "url": "https://github.com/Widen/eslint-config"
+  },
+  "version": "1.1.1"
 }
