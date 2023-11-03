@@ -4,7 +4,7 @@ import { JSXFragment } from 'estree-jsx'
 import { docsURL } from '../utils'
 
 const isImportDeclaration = (
-  node: ESTree.Node
+  node: ESTree.Node,
 ): node is ESTree.ImportDeclaration => node.type === 'ImportDeclaration'
 
 export default {
@@ -46,11 +46,11 @@ export default {
             return [
               fixer.replaceText(
                 fragment.openingFragment as unknown as ESTree.Node,
-                `<${tag}>`
+                `<${tag}>`,
               ),
               fixer.replaceText(
                 fragment.closingFragment as unknown as ESTree.Node,
-                `</${tag}>`
+                `</${tag}>`,
               ),
             ]
           },
@@ -74,7 +74,7 @@ export default {
                 fix(fixer) {
                   return fixer.insertTextAfter(
                     node.specifiers[node.specifiers.length - 1],
-                    ', Fragment'
+                    ', Fragment',
                   )
                 },
                 messageId: 'missingImport',

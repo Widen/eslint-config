@@ -19,14 +19,14 @@ function addJsxImport(fixer: Rule.RuleFixer, node: ESTree.ImportDeclaration) {
 
   return fixer.insertTextAfter(
     specifier,
-    specifier.type === 'ImportSpecifier' ? ', jsx' : ', { jsx }'
+    specifier.type === 'ImportSpecifier' ? ', jsx' : ', { jsx }',
   )
 }
 
 function removeReactImport(
   source: SourceCode,
   fixer: Rule.RuleFixer,
-  node: ESTree.ImportDeclaration
+  node: ESTree.ImportDeclaration,
 ) {
   const specifier = node.specifiers.find((spec) => spec.local.name === 'React')
   if (!specifier) return []
@@ -52,7 +52,7 @@ function applyRemainingFix(
   source: SourceCode,
   fixer: Rule.RuleFixer,
   hasPragma: boolean,
-  emotionReactImport: ESTree.ImportDeclaration | null
+  emotionReactImport: ESTree.ImportDeclaration | null,
 ) {
   const fix =
     (hasPragma ? '' : '/** @jsx jsx */\n') +

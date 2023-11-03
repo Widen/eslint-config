@@ -102,7 +102,7 @@ const oldVariables = new Set([
 function reportCssVariable(
   context: Rule.RuleContext,
   node: ESTree.Node,
-  value: string
+  value: string,
 ) {
   const regex = /var\((--[a-z-]+)(,.*)?\)/g
   const matches = value.matchAll(regex)
@@ -170,7 +170,7 @@ export default {
               fix: (fixer) =>
                 fixer.replaceText(
                   attribute as unknown as ESTree.Node,
-                  'status="' + statusMap[color] + '"'
+                  'status="' + statusMap[color] + '"',
                 ),
               messageId: 'statusProp',
               node,
