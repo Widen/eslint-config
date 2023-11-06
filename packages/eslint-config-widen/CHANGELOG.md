@@ -1,5 +1,17 @@
 # eslint-config-widen
 
+## 3.0.0
+
+### Major Changes
+
+- d6e4c92: Updates all versions to latest with major version updates for
+  @typescript-eslint and eslint-plugin-jest
+
+### Patch Changes
+
+- Updated dependencies [d6e4c92]
+  - eslint-plugin-widen@2.0.0
+
 ## 2.0.1
 
 ### Patch Changes

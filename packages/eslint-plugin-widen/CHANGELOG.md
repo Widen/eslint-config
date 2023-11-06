@@ -1,5 +1,12 @@
 # eslint-plugin-widen
 
+## 2.0.0
+
+### Major Changes
+
+- d6e4c92: Updates all versions to latest with major version updates for
+  @typescript-eslint and eslint-plugin-jest
+
 ## 1.1.1
 
 ### Patch Changes
