@@ -1,14 +1,18 @@
 import { RuleTester } from 'eslint'
 import heredoc from 'tsheredoc'
 import rule from '../src/rules/jsx-import'
+import tsParser from '@typescript-eslint/parser'
 
 RuleTester.setDefaultConfig({
-  parserOptions: {
-    ecmaFeatures: {
-      jsx: true,
+  languageOptions: {
+    parser: tsParser,
+    parserOptions: {
+      ecmaFeatures: {
+        jsx: true,
+      },
+      ecmaVersion: 2018,
+      sourceType: 'module',
     },
-    ecmaVersion: 2018,
-    sourceType: 'module',
   },
 })
 

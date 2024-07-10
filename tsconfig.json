@@ -1,7 +1,4 @@
 {
   "files": [],
-  "references": [
-    { "path": "packages/eslint-config-widen" },
-    { "path": "packages/eslint-plugin-widen" }
-  ]
+  "references": [{ "path": "packages/eslint-plugin-widen" }]
 }
