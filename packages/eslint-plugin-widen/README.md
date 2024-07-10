@@ -27,7 +27,8 @@ Add the following to your `.eslintrc` file.
 ## List of Supported Rules
 
 ✔: Enabled in the `recommended` configuration.\
-🔧: Fixable with [`eslint --fix`](https://eslint.org/docs/user-guide/command-line-interface#fixing-problems).
+🔧: Fixable with
+[`eslint --fix`](https://eslint.org/docs/user-guide/command-line-interface#fixing-problems).
 
 | ✔  | 🔧  | Rule                                         | Description                                                                                 |
 | :-: | :-: | -------------------------------------------- | ------------------------------------------------------------------------------------------- |
