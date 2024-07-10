@@ -1,6 +1,6 @@
+import eslintJsxA11y from 'eslint-plugin-jsx-a11y'
 import eslintReact from 'eslint-plugin-react'
 import eslintReactHooks from 'eslint-plugin-react-hooks'
-import eslintJsxA11y from 'eslint-plugin-jsx-a11y'
 
 export default [
   eslintReact.configs.recommended,

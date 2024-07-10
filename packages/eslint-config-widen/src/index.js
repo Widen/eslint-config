@@ -1,26 +1,26 @@
 import js from '@eslint/js'
 import sort from 'eslint-plugin-sort'
-import babelParser from '@babel/eslint-parser'
-import globals from 'globals'
 import widen from 'eslint-plugin-widen'
+import globals from 'globals'
+import babelParser from '@babel/eslint-parser'
 
 export default [
   {
     languageOptions: {
-      parser: babelParser,
-      parserOptions: {
-        requireConfigFile: false,
-      },
       globals: {
         ...globals.browser,
         ...globals.es6,
         ...globals.jest,
         ...globals.node,
       },
+      parser: babelParser,
+      parserOptions: {
+        requireConfigFile: false,
+      },
     },
     plugins: {
-      widen,
       sort,
+      widen,
     },
     rules: {
       'default-param-last': 'error',

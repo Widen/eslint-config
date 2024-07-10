@@ -1,7 +1,7 @@
+import tsParser from '@typescript-eslint/parser'
 import { RuleTester } from 'eslint'
 import heredoc from 'tsheredoc'
 import rule from '../src/rules/jsx-fragments'
-import tsParser from '@typescript-eslint/parser'
 
 RuleTester.setDefaultConfig({
   languageOptions: {
