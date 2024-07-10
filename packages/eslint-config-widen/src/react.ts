@@ -40,6 +40,7 @@ export = {
     'react/jsx-curly-brace-presence': ['warn', 'never'],
     'react/jsx-first-prop-new-line': ['error', 'multiline'],
     'react/jsx-no-duplicate-props': 'error',
+    'react/jsx-no-useless-fragment' : 'error',
     'react/jsx-sort-props': [
       'error',
       {
