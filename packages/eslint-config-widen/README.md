@@ -31,9 +31,9 @@ import { base, typescript, react, playwright, jest } from 'eslint-config-widen'
 
 export default [
   // Base Widen configurations
-  ...base,
-  ...typescript,
-  ...react,
+  base,
+  typescript,
+  react,
 
   // Overrides for specific directories
   {
