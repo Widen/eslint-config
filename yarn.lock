@@ -4054,7 +4054,7 @@ __metadata:
     "@babel/eslint-parser": ^7.22.15
     "@typescript-eslint/eslint-plugin": ^6.9.1
     "@typescript-eslint/parser": ^6.9.1
-    eslint: ">= 8"
+    eslint: ">= 9"
     eslint-plugin-jest: ">= 27"
     eslint-plugin-jsx-a11y: ">= 6"
     eslint-plugin-playwright: ">=0.16.0"
