@@ -8,8 +8,8 @@ import { fileURLToPath } from 'node:url'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
-// This is in place until https://github.com/typescript-eslint/typescript-eslint
-// updates to v8
+
+//TODO: cleanup compat https://acquia.atlassian.net/browse/FE-1172
 const compat = new FlatCompat({
   allConfig: js.configs.all,
   baseDirectory: __dirname,
