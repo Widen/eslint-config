@@ -5,14 +5,14 @@
   },
   "description": "Widen's shared ESLint config.",
   "exports": {
-    ".": "./src/index.js",
-    "./jest": "./src/jest.js",
-    "./playwright": "./src/playwright.js",
-    "./react": "./src/react.js",
-    "./typescript": "./src/typescript.js"
+    ".": "./lib/index.js",
+    "./jest": "./lib/jest.js",
+    "./playwright": "./lib/playwright.js",
+    "./react": "./lib/react.js",
+    "./typescript": "./lib/typescript.js"
   },
   "files": [
-    "src"
+    "lib"
   ],
   "homepage": "https://github.com/Widen/eslint-config/tree/master/packages/eslint-config-widen#readme",
   "license": "ISC",
