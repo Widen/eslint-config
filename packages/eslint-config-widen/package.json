@@ -18,13 +18,13 @@
     "@typescript-eslint/eslint-plugin": "^6.9.1",
     "@typescript-eslint/parser": "^6.9.1",
     "eslint": ">= 9",
-    "eslint-plugin-jest": ">= 27",
+    "eslint-plugin-jest": ">= 28",
     "eslint-plugin-jsx-a11y": ">= 6",
-    "eslint-plugin-playwright": ">=0.16.0",
+    "eslint-plugin-playwright": ">=1.0.0",
     "eslint-plugin-react": ">= 7",
     "eslint-plugin-react-hooks": ">= 4",
-    "eslint-plugin-sort": ">= 2",
-    "eslint-plugin-widen": ">=2.0.0"
+    "eslint-plugin-sort": ">= 3",
+    "eslint-plugin-widen": ">=3.0.0"
   },
   "peerDependenciesMeta": {
     "@typescript-eslint/eslint-plugin": {

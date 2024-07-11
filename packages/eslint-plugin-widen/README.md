@@ -12,16 +12,22 @@ yarn add --dev eslint-plugin-widen
 
 ## Usage
 
-Add the following to your `.eslintrc` file.
+Add the following to your `eslint.config.mjs` file.
 
-```json
-{
-  "plugins": ["widen"],
-  "rules": {
-    "widen/jsx-fragments": "error",
-    "widen/jsx-import": "error"
-  }
-}
+```js
+import widen from 'eslint-plugin-widen'
+
+export default [
+  {
+    plugins: {
+      widen,
+    },
+    rules: {
+      'widen/jsx-fragments': 'error',
+      'widen/jsx-import': 'error',
+    },
+  },
+]
 ```
 
 ## List of Supported Rules
