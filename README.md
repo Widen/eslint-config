@@ -25,21 +25,27 @@ yarn add -D eslint-plugin-jest
 
 ## Usage
 
-In your `.eslintrc` file, add the following four entries to your extends list.
-If you don't need a specific configuration, simply remove it from the list.
+In your `eslint.config.mjs` file, add the following four entries to your extends
+list. If you don't need a specific configuration, simply remove it from the
+list.
 
-```json
-{
-  "extends": ["widen", "widen/typescript", "widen/react"],
-  "overrides": [
-    {
-      "files": ["e2e/**"],
-      "extends": "widen/playwright"
-    },
-    {
-      "files": ["frontend/**"],
-      "extends": "widen/jest"
-    }
-  ]
-}
+```js
+import { base, typescript, react, playwright, jest } from 'eslint-config-widen'
+
+export default [
+  // Base Widen configurations
+  base,
+  typescript,
+  react,
+
+  // Overrides for specific directories
+  {
+    files: ['e2e/**'],
+    ...playwright,
+  },
+  {
+    files: ['frontend/**'],
+    ...jest,
+  },
+]
 ```

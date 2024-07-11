@@ -1,13 +1,16 @@
+import tsParser from '@typescript-eslint/parser'
 import { RuleTester } from 'eslint'
 import rule from '../src/rules/patterns-18'
 
 RuleTester.setDefaultConfig({
-  parserOptions: {
-    ecmaFeatures: {
-      jsx: true,
+  languageOptions: {
+    parser: tsParser,
+    parserOptions: {
+      ecmaFeatures: {
+        jsx: true,
+      },
+      sourceType: 'module',
     },
-    ecmaVersion: 2018,
-    sourceType: 'module',
   },
 })
 

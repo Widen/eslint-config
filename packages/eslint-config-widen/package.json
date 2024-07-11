@@ -1,15 +1,11 @@
 {
   "author": "Widen",
   "dependencies": {
-    "eslint-config-prettier": "^9.0.0"
+    "eslint-config-prettier": "^9.1.0"
   },
   "description": "Widen's shared ESLint config.",
   "exports": {
-    ".": "./lib/index.js",
-    "./jest": "./lib/jest.js",
-    "./playwright": "./lib/playwright.js",
-    "./react": "./lib/react.js",
-    "./typescript": "./lib/typescript.js"
+    ".": "./lib/index.js"
   },
   "files": [
     "lib"
@@ -21,14 +17,14 @@
     "@babel/eslint-parser": "^7.22.15",
     "@typescript-eslint/eslint-plugin": "^6.9.1",
     "@typescript-eslint/parser": "^6.9.1",
-    "eslint": ">= 8",
-    "eslint-plugin-jest": ">= 27",
+    "eslint": ">= 9",
+    "eslint-plugin-jest": ">= 28",
     "eslint-plugin-jsx-a11y": ">= 6",
-    "eslint-plugin-playwright": ">=0.16.0",
+    "eslint-plugin-playwright": ">= 1",
     "eslint-plugin-react": ">= 7",
     "eslint-plugin-react-hooks": ">= 4",
-    "eslint-plugin-sort": ">= 2",
-    "eslint-plugin-widen": ">=2.0.0"
+    "eslint-plugin-sort": ">= 3",
+    "eslint-plugin-widen": ">= 3"
   },
   "peerDependenciesMeta": {
     "@typescript-eslint/eslint-plugin": {
