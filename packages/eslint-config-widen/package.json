@@ -24,7 +24,7 @@
     "eslint-plugin-react": ">= 7",
     "eslint-plugin-react-hooks": ">= 4",
     "eslint-plugin-sort": ">= 3",
-    "eslint-plugin-widen": ">= 3"
+    "eslint-plugin-widen": ">=3.0.0"
   },
   "peerDependenciesMeta": {
     "@typescript-eslint/eslint-plugin": {
@@ -54,5 +54,5 @@
     "type": "git",
     "url": "https://github.com/Widen/eslint-config"
   },
-  "version": "3.0.0"
+  "version": "4.0.0"
 }
