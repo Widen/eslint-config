@@ -1,5 +1,11 @@
 # eslint-config-widen
 
+## 4.0.1
+
+### Patch Changes
+
+- fd5844c: Fix config and update examples.
+
 ## 4.0.0
 
 ### Major Changes
