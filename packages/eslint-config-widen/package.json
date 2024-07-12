@@ -10,6 +10,7 @@
   "files": [
     "lib"
   ],
+  "type": "module",
   "homepage": "https://github.com/Widen/eslint-config/tree/master/packages/eslint-config-widen#readme",
   "license": "ISC",
   "name": "eslint-config-widen",

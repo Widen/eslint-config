@@ -2,6 +2,12 @@
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
     "outDir": "lib",
-    "rootDir": "src"
+    "rootDir": "src",
+    "module": "esnext",
+    "esModuleInterop": true,
+    "target": "es2016"
+  },
+  "paths": {
+    "@/*": ["./src/*"]
   }
 }

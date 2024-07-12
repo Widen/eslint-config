@@ -1,7 +1,7 @@
 import tseslint from 'typescript-eslint'
 
 export default [
-  tseslint.configs.recommended,
+  ...tseslint.configs.recommended,
   {
     files: ['*.ts', '*.tsx'],
     languageOptions: {

@@ -1,19 +1,58 @@
-import eslintJsxA11y from 'eslint-plugin-jsx-a11y'
-import eslintReact from 'eslint-plugin-react'
-import eslintReactHooks from 'eslint-plugin-react-hooks'
+import jsxA11y from 'eslint-plugin-jsx-a11y'
+import react from 'eslint-plugin-react'
+import reactHooks from 'eslint-plugin-react-hooks'
+import sharedGlobals from './sharedGlobals.js'
+
+const languageOptions = {
+  globals: sharedGlobals,
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
+    },
+  },
+}
 
 export default [
-  eslintReact.configs.recommended,
-  eslintReactHooks.configs.recommended,
-  eslintJsxA11y.configs.recommended,
+  {
+    files: ['**/*.{js,jsx,mjs,cjs,ts,tsx}'],
+    languageOptions,
+    plugins: {
+      react,
+    },
+    rules: {
+      ...react.configs.recommended.rules,
+    },
+  },
+  {
+    files: ['**/*.{js,jsx,mjs,cjs,ts,tsx}'],
+    languageOptions,
+    plugins: {
+      'react-hooks': reactHooks,
+    },
+    rules: {
+      ...reactHooks.configs.recommended.rules,
+    },
+  },
+  {
+    files: ['**/*.{js,jsx,mjs,cjs,ts,tsx}'],
+    languageOptions,
+    plugins: {
+      'jsx-a11y': jsxA11y,
+    },
+    rules: {
+      ...jsxA11y.configs.recommended.rules,
+    },
+  },
   {
     files: ['*.tsx', '*.{spec,test}.{js,jsx}'],
+    languageOptions,
     rules: {
       'react/prop-types': 'off',
     },
   },
   {
     files: ['*.{spec,test}.{tsx,js,jsx}'],
+    languageOptions,
     rules: {
       'react/button-has-type': 'off',
       'react/display-name': 'off',
@@ -21,6 +60,7 @@ export default [
   },
   {
     files: ['*.tsx', '*.{spec,test}.{js,jsx}'],
+    languageOptions,
     rules: {
       'jsx-a11y/click-events-have-key-events': 'warn',
       'jsx-a11y/label-has-associated-control': [

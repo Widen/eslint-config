@@ -1,24 +1,21 @@
 import js from '@eslint/js'
+import prettier from 'eslint-plugin-prettier'
 import sort from 'eslint-plugin-sort'
 import widen from 'eslint-plugin-widen'
-import globals from 'globals'
 import babelParser from '@babel/eslint-parser'
+import sharedGlobals from './sharedGlobals.js'
 
 export default [
   {
     languageOptions: {
-      globals: {
-        ...globals.browser,
-        ...globals.es6,
-        ...globals.jest,
-        ...globals.node,
-      },
+      globals: sharedGlobals,
       parser: babelParser,
       parserOptions: {
         requireConfigFile: false,
       },
     },
     plugins: {
+      prettier,
       sort,
       widen,
     },
@@ -89,9 +86,11 @@ export default [
   },
   js.configs.recommended,
   {
-    files: ['**/*.js', '**/*.mjs'],
+    plugins: {
+      prettier,
+    },
     rules: {
-      'prettier/prettier': 'error', // Assuming you have `eslint-plugin-prettier` setup
+      ...prettier.configs.recommended.rules,
     },
   },
 ]
