@@ -1,5 +1,7 @@
 import playwright from 'eslint-plugin-playwright'
 
+delete playwright.configs['playwright-test'].env
+
 export default [
   {
     plugins: {
@@ -32,5 +34,10 @@ export default [
       'playwright/require-top-level-describe': 'warn',
     },
   },
-  playwright.configs['playwright-test'],
+  {
+    ...playwright.configs['playwright-test'],
+    plugins: {
+      playwright,
+    },
+  },
 ]

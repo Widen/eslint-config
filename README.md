@@ -30,22 +30,20 @@ list. If you don't need a specific configuration, simply remove it from the
 list.
 
 ```js
-import { base, typescript, react, playwright, jest } from 'eslint-config-widen'
+import { base, react, jest, playwright, typescript } from 'eslint-config-widen'
 
 export default [
-  // Base Widen configurations
-  base,
-  typescript,
-  react,
-
-  // Overrides for specific directories
-  {
-    files: ['e2e/**'],
-    ...playwright,
-  },
-  {
-    files: ['frontend/**'],
+  ...base,
+  ...typescript,
+  ...react,
+  ...[
+    // you can specify what to ignore by using the `ignores` key before any other rule
+    // this will filter out things we dont want this to run on
+    { ignores: ['*.test.*'] },
     ...jest,
-  },
+    // you can also override rules by specifying the rule and the new value
+    { files: ['*.spec.js'], rules: { 'jest/expect-expect': 'off' } },
+  ],
+  ...[{ files: ['e2e/**'] }, ...playwright],
 ]
 ```
