@@ -1,11 +1,14 @@
-import tseslint from 'typescript-eslint'
+import { configs, parser, plugin } from 'typescript-eslint'
 
 export default [
-  ...tseslint.configs.recommended,
+  ...configs.recommended,
   {
     files: ['*.ts', '*.tsx'],
     languageOptions: {
-      parser: tseslint.parser,
+      parser: parser,
+    },
+    plugins: {
+      '@typescript-eslint': plugin,
     },
     rules: {
       '@typescript-eslint/camelcase': 'off',

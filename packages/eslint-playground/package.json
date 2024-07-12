@@ -16,7 +16,8 @@
     "eslint-plugin-react": "^7.34.3",
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-sort": "^3.0.2",
-    "eslint-plugin-widen": "workspace:^"
+    "eslint-plugin-widen": "workspace:^",
+    "typescript-eslint": "^7.16.0"
   },
   "dependencies": {
     "react": "^18.3.1"

@@ -16,8 +16,6 @@
   "name": "eslint-config-widen",
   "peerDependencies": {
     "@babel/eslint-parser": "^7.22.15",
-    "@typescript-eslint/eslint-plugin": "^6.9.1",
-    "@typescript-eslint/parser": "^6.9.1",
     "eslint": ">= 9",
     "eslint-plugin-jest": ">= 28",
     "eslint-plugin-jsx-a11y": ">= 6",
@@ -25,15 +23,10 @@
     "eslint-plugin-react": ">= 7",
     "eslint-plugin-react-hooks": ">= 4",
     "eslint-plugin-sort": ">= 3",
-    "eslint-plugin-widen": ">=3.0.0"
+    "eslint-plugin-widen": ">=3.0.0",
+    "typescript-eslint": ">= 7.16.0"
   },
   "peerDependenciesMeta": {
-    "@typescript-eslint/eslint-plugin": {
-      "optional": true
-    },
-    "@typescript-eslint/parser": {
-      "optional": true
-    },
     "eslint-plugin-jest": {
       "optional": true
     },
@@ -47,6 +40,9 @@
       "optional": true
     },
     "eslint-plugin-react-hooks": {
+      "optional": true
+    },
+    "typescript-eslint": {
       "optional": true
     }
   },
