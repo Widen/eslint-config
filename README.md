@@ -11,7 +11,7 @@ Widen's shared ESLint config and plugins.
 yarn add -D eslint eslint-{config,plugin}-widen eslint-plugin-sort @babel/{core,eslint-parser}
 
 # If you use TypeScript
-yarn add -D @typescript-eslint/{eslint-plugin,parser}
+yarn add -D typescript-eslint
 
 # If you use React
 yarn add -D eslint-plugin-{react,react-hooks,jsx-a11y}

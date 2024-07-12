@@ -1,8 +1,8 @@
+import babelParser from '@babel/eslint-parser'
 import js from '@eslint/js'
 import prettier from 'eslint-plugin-prettier'
 import sort from 'eslint-plugin-sort'
 import widen from 'eslint-plugin-widen'
-import babelParser from '@babel/eslint-parser'
 import sharedGlobals from './sharedGlobals.js'
 
 export default [
