@@ -1,5 +1,11 @@
 # eslint-config-widen
 
+## 4.0.3
+
+### Patch Changes
+
+- 1913360: Correctly specify react version and fix typescript overrides.
+
 ## 4.0.2
 
 ### Patch Changes
