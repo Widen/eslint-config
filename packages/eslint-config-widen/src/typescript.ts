@@ -3,7 +3,6 @@ import { configs, parser, plugin } from 'typescript-eslint'
 export default [
   ...configs.recommended,
   {
-    files: ['*.ts', '*.tsx'],
     languageOptions: {
       parser: parser,
     },

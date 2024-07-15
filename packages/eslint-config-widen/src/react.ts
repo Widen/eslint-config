@@ -12,6 +12,14 @@ const languageOptions = {
   },
 }
 
+const reactVersion = {
+  settings: {
+    react: {
+      version: 'detect',
+    },
+  },
+}
+
 export default [
   {
     files: ['**/*.{js,jsx,mjs,cjs,ts,tsx}'],
@@ -22,6 +30,7 @@ export default [
     rules: {
       ...react.configs.recommended.rules,
     },
+    ...reactVersion,
   },
   {
     files: ['**/*.{js,jsx,mjs,cjs,ts,tsx}'],
@@ -101,11 +110,6 @@ export default [
       ],
       'widen/jsx-fragments': 'error',
       'widen/jsx-import': 'error',
-    },
-    settings: {
-      react: {
-        version: 'detect',
-      },
     },
   },
 ]
