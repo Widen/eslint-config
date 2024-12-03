@@ -7,6 +7,6 @@
     { "path": "packages/eslint-config-widen-playwright" },
     { "path": "packages/eslint-config-widen-react" },
     { "path": "packages/eslint-config-widen-typescript" },
-    { "path": "packages/eslint-plugin-widen" },
+    { "path": "packages/eslint-plugin-widen" }
   ]
 }

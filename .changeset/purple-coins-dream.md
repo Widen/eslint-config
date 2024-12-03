@@ -6,5 +6,5 @@
 'eslint-config-widen-jest': major
 ---
 
-Create separate packages for each component.
-Allows users to import only the dependencies that they need, rather than all of them. 
+Create separate packages for each component. Allows users to import only the
+dependencies that they need, rather than all of them.

@@ -17,7 +17,5 @@ list.
 ```js
 import playwright from 'eslint-config-widen-playwright'
 
-export default [
-  ...[{ files: ['e2e/**'] }, ...playwright],
-]
+export default [...[{ files: ['e2e/**'] }, ...playwright]]
 ```
