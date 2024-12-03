@@ -1,0 +1,29 @@
+{
+  "author": "Widen",
+  "dependencies": {
+    "eslint-config-prettier": "^9.1.0"
+  },
+  "description": "Widen's shared ESLint base config.",
+  "exports": {
+    ".": "./lib/base.js"
+  },
+  "files": [
+    "lib"
+  ],
+  "type": "module",
+  "homepage": "https://github.com/Widen/eslint-config/tree/master/packages/eslint-config-widen-base#readme",
+  "license": "ISC",
+  "name": "eslint-config-widen-base",
+  "peerDependencies": {
+    "@babel/eslint-parser": "^7.22.15",
+    "eslint": ">= 9",
+    "eslint-plugin-sort": ">= 3",
+    "eslint-plugin-widen": ">=3.0.0"
+  },
+  "repository": {
+    "directory": "packages/eslint-config-widen-base",
+    "type": "git",
+    "url": "https://github.com/Widen/eslint-config"
+  },
+  "version": "1.0.0"
+}
