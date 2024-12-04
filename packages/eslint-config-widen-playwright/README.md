@@ -11,7 +11,6 @@ yarn add -D eslint eslint-config-widen-playwright eslint-plugin-playwright
 ## Usage
 
 In your `eslint.config.mjs` file, add the following four entries to your extends
-list. If you don't need a specific configuration, simply remove it from the
 list.
 
 ```js
