@@ -1,0 +1,28 @@
+{
+  "author": "Widen",
+  "dependencies": {
+    "eslint-config-prettier": "^9.1.0"
+  },
+  "description": "Widen's shared ESLint config for Typescript.",
+  "exports": {
+    ".": "./lib/typescript.js"
+  },
+  "files": [
+    "lib"
+  ],
+  "type": "module",
+  "homepage": "https://github.com/Widen/eslint-config/tree/master/packages/eslint-config-widen-typescript#readme",
+  "license": "ISC",
+  "name": "eslint-config-widen-typescript",
+  "peerDependencies": {
+    "eslint": ">= 9",
+    "eslint-plugin-sort": ">= 3",
+    "typescript-eslint": ">= 7.16.0"
+  },
+  "repository": {
+    "directory": "packages/eslint-config-widen-typescript",
+    "type": "git",
+    "url": "https://github.com/Widen/eslint-config"
+  },
+  "version": "1.0.0"
+}

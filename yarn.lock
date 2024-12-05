@@ -3691,6 +3691,66 @@ __metadata:
   languageName: node
   linkType: hard
 
+"eslint-config-widen-base@workspace:packages/eslint-config-widen-base":
+  version: 0.0.0-use.local
+  resolution: "eslint-config-widen-base@workspace:packages/eslint-config-widen-base"
+  dependencies:
+    eslint-config-prettier: ^9.1.0
+  peerDependencies:
+    "@babel/eslint-parser": ^7.22.15
+    eslint: ">= 9"
+    eslint-plugin-sort: ">= 3"
+    eslint-plugin-widen: ">=3.0.0"
+  languageName: unknown
+  linkType: soft
+
+"eslint-config-widen-jest@workspace:packages/eslint-config-widen-jest":
+  version: 0.0.0-use.local
+  resolution: "eslint-config-widen-jest@workspace:packages/eslint-config-widen-jest"
+  dependencies:
+    eslint-config-prettier: ^9.1.0
+  peerDependencies:
+    eslint: ">= 9"
+    eslint-plugin-jest: ">= 28"
+  languageName: unknown
+  linkType: soft
+
+"eslint-config-widen-playwright@workspace:packages/eslint-config-widen-playwright":
+  version: 0.0.0-use.local
+  resolution: "eslint-config-widen-playwright@workspace:packages/eslint-config-widen-playwright"
+  dependencies:
+    eslint-config-prettier: ^9.1.0
+  peerDependencies:
+    eslint: ">= 9"
+    eslint-plugin-playwright: ">= 1"
+  languageName: unknown
+  linkType: soft
+
+"eslint-config-widen-react@workspace:packages/eslint-config-widen-react":
+  version: 0.0.0-use.local
+  resolution: "eslint-config-widen-react@workspace:packages/eslint-config-widen-react"
+  dependencies:
+    eslint-config-prettier: ^9.1.0
+  peerDependencies:
+    eslint: ">= 9"
+    eslint-plugin-jsx-a11y: ">= 6"
+    eslint-plugin-react: ">= 7"
+    eslint-plugin-react-hooks: ">= 4"
+  languageName: unknown
+  linkType: soft
+
+"eslint-config-widen-typescript@workspace:packages/eslint-config-widen-typescript":
+  version: 0.0.0-use.local
+  resolution: "eslint-config-widen-typescript@workspace:packages/eslint-config-widen-typescript"
+  dependencies:
+    eslint-config-prettier: ^9.1.0
+  peerDependencies:
+    eslint: ">= 9"
+    eslint-plugin-sort: ">= 3"
+    typescript-eslint: ">= 7.16.0"
+  languageName: unknown
+  linkType: soft
+
 "eslint-config-widen@workspace:^, eslint-config-widen@workspace:packages/eslint-config-widen":
   version: 0.0.0-use.local
   resolution: "eslint-config-widen@workspace:packages/eslint-config-widen"

@@ -1,5 +1,9 @@
 # eslint-config-widen
 
+@deprecated - use eslint-config-widen-base, eslint-config-widen-jest,
+eslint-config-widen-playwright, eslint-config-widen-react,
+eslint-config-widen-typescript
+
 Widen's shared ESLint config.
 
 ## Installation
