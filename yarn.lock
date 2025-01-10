@@ -3704,6 +3704,19 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"eslint-config-widen-emotion@workspace:packages/eslint-config-widen-emotion":
+  version: 0.0.0-use.local
+  resolution: "eslint-config-widen-emotion@workspace:packages/eslint-config-widen-emotion"
+  dependencies:
+    eslint-config-prettier: ^9.1.0
+  peerDependencies:
+    eslint: ">= 9"
+    eslint-plugin-jsx-a11y: ">= 6"
+    eslint-plugin-react: ">= 7"
+    eslint-plugin-react-hooks: ">= 4"
+  languageName: unknown
+  linkType: soft
+
 "eslint-config-widen-jest@workspace:packages/eslint-config-widen-jest":
   version: 0.0.0-use.local
   resolution: "eslint-config-widen-jest@workspace:packages/eslint-config-widen-jest"

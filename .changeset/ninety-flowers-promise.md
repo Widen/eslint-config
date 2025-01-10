@@ -1,5 +1,5 @@
 ---
-'eslint-config-widen-react': minor
+'eslint-config-widen-emotion': minor
 ---
 
-Add a new rule that detects conditional statements used on a css prop.
+Add a new package for emotion specific rules.

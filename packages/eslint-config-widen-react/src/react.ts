@@ -1,7 +1,6 @@
 import jsxA11y from 'eslint-plugin-jsx-a11y'
 import react from 'eslint-plugin-react'
 import reactHooks from 'eslint-plugin-react-hooks'
-import noConditionalCssProp from './rules/no-conditional-css-prop.js'
 import sharedGlobals from './sharedGlobals.js'
 
 const languageOptions = {
@@ -72,7 +71,6 @@ export default [
     files: ['*.tsx', '*.{spec,test}.{js,jsx}'],
     languageOptions,
     rules: {
-      'custom/no-conditional-css-prop': noConditionalCssProp,
       'jsx-a11y/click-events-have-key-events': 'warn',
       'jsx-a11y/label-has-associated-control': [
         'error',
