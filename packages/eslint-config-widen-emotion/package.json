@@ -15,10 +15,7 @@
   "license": "ISC",
   "name": "eslint-config-widen-emotion",
   "peerDependencies": {
-    "eslint": ">= 9",
-    "eslint-plugin-jsx-a11y": ">= 6",
-    "eslint-plugin-react": ">= 7",
-    "eslint-plugin-react-hooks": ">= 4"
+    "eslint": ">= 9"
   },
   "repository": {
     "directory": "packages/eslint-config-widen-emotion",
