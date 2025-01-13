@@ -1,24 +1,44 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Rule } from 'eslint'
+
+function detectConditionalExpression(
+  expression: any,
+  context: Rule.RuleContext,
+  node: any,
+) {
+  if (expression) {
+    if (
+      expression.type === 'ConditionalExpression' ||
+      (expression.type === 'LogicalExpression' &&
+        (expression.operator === '&&' || expression.operator === '||'))
+    ) {
+      context.report({
+        message:
+          'Avoid using conditionals within the css prop, move them to style.',
+        node: node,
+      })
+    }
+  }
+}
 
 export default {
   create(context) {
     return {
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       JSXAttribute(node: any) {
-        if (
-          node.name.name === 'css' &&
-          node.value &&
-          node.value.type === 'JSXExpressionContainer' &&
-          (node.value.expression.type === 'ConditionalExpression' ||
-            (node.value.expression.type === 'LogicalExpression' &&
-              (node.value.expression.operator === '&&' ||
-                node.value.expression.operator === '||')))
-        ) {
-          context.report({
-            message:
-              'Avoid using conditionals within the css prop, move them to style.',
-            node,
-          })
+        if (node.name.name === 'css') {
+          if (node.value && node.value.type === 'JSXExpressionContainer') {
+            const expression = node.value.expression
+
+            // Check if it's an array
+            if (expression.type === 'ArrayExpression') {
+              expression.elements.forEach((element: any) => {
+                detectConditionalExpression(element, context, node)
+              })
+            } else {
+              // Check single expressions
+              detectConditionalExpression(expression, context, node)
+            }
+          }
         }
       },
     }
@@ -27,6 +47,13 @@ export default {
     docs: {
       category: 'Best Practices',
       description: 'Disallow conditionals within the css prop in components',
+      example: `
+      // Before
+      <div css={[randomDivStyle, isRed ? {color: "red"} : null]} />
+
+      // After
+      <div css={randomDivStyle} style={isRed ? {color: "red"}} />
+      `,
       recommended: false,
     },
     schema: [],

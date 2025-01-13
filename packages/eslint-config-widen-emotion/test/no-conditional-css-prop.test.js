@@ -42,6 +42,15 @@ ruleTester.run('no-conditional-css-prop', rule, {
         },
       ],
     },
+    {
+      code: '<div css={[{color: `red`}, true && {background: `black`}]} />',
+      errors: [
+        {
+          message:
+            'Avoid using conditionals within the css prop, move them to style.',
+        },
+      ],
+    },
   ],
   valid: [
     {
@@ -52,6 +61,9 @@ ruleTester.run('no-conditional-css-prop', rule, {
     },
     {
       code: '<div css={`color: ${someVariable}`} />',
+    },
+    {
+      code: '<div css={[{color: `red`}, {background: `black`}]} />',
     },
   ],
 })
