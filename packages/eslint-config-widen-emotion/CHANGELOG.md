@@ -1,5 +1,11 @@
 # eslint-config-widen-emotion
 
+## 1.3.0
+
+### Minor Changes
+
+- 773a8e8: Work through cloning issues.
+
 ## 1.2.0
 
 ### Minor Changes
