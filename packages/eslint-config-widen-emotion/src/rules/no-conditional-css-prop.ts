@@ -46,7 +46,8 @@ export default {
   meta: {
     docs: {
       category: 'Best Practices',
-      description: 'Disallow conditionals within the css prop in components',
+      description:
+        'Disallow conditionals within the css prop, move them to the style prop. This increases the render performance.',
       example: `
       // Before
       <div css={[randomDivStyle, isRed ? {color: "red"} : null]} />
