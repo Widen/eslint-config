@@ -3,6 +3,7 @@
   "references": [
     { "path": "packages/eslint-config-widen" },
     { "path": "packages/eslint-config-widen-base" },
+    { "path": "packages/eslint-config-widen-emotion" },
     { "path": "packages/eslint-config-widen-jest" },
     { "path": "packages/eslint-config-widen-playwright" },
     { "path": "packages/eslint-config-widen-react" },

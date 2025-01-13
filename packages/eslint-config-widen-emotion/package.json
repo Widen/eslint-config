@@ -1,0 +1,26 @@
+{
+  "author": "Widen",
+  "dependencies": {
+    "eslint-config-prettier": "^9.1.0"
+  },
+  "description": "Widen's shared ESLint config for Emotion.",
+  "exports": {
+    ".": "./lib/index.js"
+  },
+  "files": [
+    "lib"
+  ],
+  "type": "module",
+  "homepage": "https://github.com/Widen/eslint-config/tree/master/packages/eslint-config-widen-emotion#readme",
+  "license": "ISC",
+  "name": "eslint-config-widen-emotion",
+  "peerDependencies": {
+    "eslint": ">= 9"
+  },
+  "repository": {
+    "directory": "packages/eslint-config-widen-emotion",
+    "type": "git",
+    "url": "https://github.com/Widen/eslint-config"
+  },
+  "version": "1.0.0"
+}
