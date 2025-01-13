@@ -21,7 +21,7 @@ function detectConditionalExpression(
   }
 }
 
-export default {
+const noConditionalCssProp: Rule.RuleModule = {
   create(context) {
     return {
       JSXAttribute(node: any) {
@@ -46,9 +46,8 @@ export default {
   meta: {
     docs: {
       category: 'Best Practices',
-      description:
-        'Disallow conditionals within the css prop, move them to the style prop. This increases the render performance.',
-      example: `
+      description: `Disallow conditionals within the css prop, move them to the style prop. This increases the render performance.,
+
       // Before
       <div css={[randomDivStyle, isRed ? {color: "red"} : null]} />
 
@@ -60,4 +59,6 @@ export default {
     schema: [],
     type: 'suggestion',
   },
-} as Rule.RuleModule
+}
+
+export default noConditionalCssProp
