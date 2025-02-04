@@ -4,7 +4,7 @@
   "private": true,
   "author": "Widen",
   "license": "ISC",
-  "packageManager": "yarn@3.6.4",
+  "packageManager": "yarn@4.6.0",
   "repository": "github:Widen/eslint-config",
   "workspaces": [
     "packages/*"
