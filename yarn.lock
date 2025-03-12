@@ -3704,7 +3704,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"eslint-config-widen-emotion@workspace:^, eslint-config-widen-emotion@workspace:packages/eslint-config-widen-emotion":
+"eslint-config-widen-emotion@workspace:packages/eslint-config-widen-emotion":
   version: 0.0.0-use.local
   resolution: "eslint-config-widen-emotion@workspace:packages/eslint-config-widen-emotion"
   dependencies:
@@ -3767,7 +3767,6 @@ __metadata:
   dependencies:
     eslint-config-prettier: "npm:^9.1.0"
     eslint-config-widen-base: "workspace:^"
-    eslint-config-widen-emotion: "workspace:^"
     eslint-config-widen-jest: "workspace:^"
     eslint-config-widen-playwright: "workspace:^"
     eslint-config-widen-react: "workspace:^"
