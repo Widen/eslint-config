@@ -22,7 +22,7 @@ const reactVersion = {
 
 export default [
   {
-    files: ['**/*.{js,jsx,mjs,cjs,ts,tsx}'],
+    files: ['**/*.{js,jsx,ts,tsx}'],
     languageOptions,
     plugins: {
       react,
@@ -33,7 +33,7 @@ export default [
     ...reactVersion,
   },
   {
-    files: ['**/*.{js,jsx,mjs,cjs,ts,tsx}'],
+    files: ['**/*.{js,jsx,ts,tsx}'],
     languageOptions,
     plugins: {
       'react-hooks': reactHooks,
@@ -43,7 +43,7 @@ export default [
     },
   },
   {
-    files: ['**/*.{js,jsx,mjs,cjs,ts,tsx}'],
+    files: ['**/*.{js,jsx,ts,tsx}'],
     languageOptions,
     plugins: {
       'jsx-a11y': jsxA11y,
@@ -53,7 +53,7 @@ export default [
     },
   },
   {
-    files: ['**/*.{spec,test}.{tsx,js,jsx}'],
+    files: ['**/*.{spec,test}.{tsx,js,jsx,ts}'],
     languageOptions,
     rules: {
       'react/button-has-type': 'off',
@@ -62,7 +62,7 @@ export default [
     },
   },
   {
-    files: ['**/*.{js,jsx,mjs,cjs,ts,tsx}'],
+    files: ['**/*.{js,jsx,ts,tsx}'],
     languageOptions,
     rules: {
       'jsx-a11y/click-events-have-key-events': 'warn',
