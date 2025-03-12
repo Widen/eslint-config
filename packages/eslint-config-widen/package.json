@@ -1,7 +1,12 @@
 {
   "author": "Widen",
   "dependencies": {
-    "eslint-config-prettier": "^9.1.0"
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-config-widen-base": "workspace:^",
+    "eslint-config-widen-jest": "workspace:^",
+    "eslint-config-widen-playwright": "workspace:^",
+    "eslint-config-widen-react": "workspace:^",
+    "eslint-config-widen-typescript": "workspace:^"
   },
   "description": "Widen's shared ESLint config.",
   "exports": {
