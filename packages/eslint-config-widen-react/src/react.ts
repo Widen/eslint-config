@@ -53,22 +53,16 @@ export default [
     },
   },
   {
-    files: ['*.tsx', '*.{spec,test}.{js,jsx}'],
-    languageOptions,
-    rules: {
-      'react/prop-types': 'off',
-    },
-  },
-  {
-    files: ['*.{spec,test}.{tsx,js,jsx}'],
+    files: ['**/*.{spec,test}.{tsx,js,jsx}'],
     languageOptions,
     rules: {
       'react/button-has-type': 'off',
       'react/display-name': 'off',
+      'react/prop-types': 'off',
     },
   },
   {
-    files: ['*.tsx', '*.{spec,test}.{js,jsx}'],
+    files: ['**/*.{js,jsx,mjs,cjs,ts,tsx}'],
     languageOptions,
     rules: {
       'jsx-a11y/click-events-have-key-events': 'warn',

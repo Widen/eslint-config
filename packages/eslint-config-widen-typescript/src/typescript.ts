@@ -4,6 +4,7 @@ import { configs, parser, plugin } from 'typescript-eslint'
 export default [
   ...configs.recommended,
   {
+    files: ['**/*.ts', '**/*.tsx'],
     languageOptions: {
       parser: parser,
     },
@@ -18,6 +19,7 @@ export default [
       '@typescript-eslint/explicit-module-boundary-types': 'off',
       '@typescript-eslint/no-empty-function': 'off',
       '@typescript-eslint/no-empty-interface': 'off',
+      '@typescript-eslint/no-empty-object-type': 'off',
       '@typescript-eslint/no-explicit-any': 'off',
       '@typescript-eslint/no-extra-semi': 'off',
       '@typescript-eslint/no-non-null-assertion': 'off',
