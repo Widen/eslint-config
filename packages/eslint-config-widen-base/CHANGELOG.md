@@ -1,5 +1,13 @@
 # eslint-config-widen-base
 
+## 4.0.1
+
+### Patch Changes
+
+- f285c53: Attempt to fix workspace dependency issues.
+- Updated dependencies [f285c53]
+  - eslint-plugin-widen@3.2.1
+
 ## 4.0.0
 
 ### Minor Changes

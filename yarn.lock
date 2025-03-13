@@ -3700,7 +3700,7 @@ __metadata:
     "@babel/eslint-parser": ^7.22.15
     eslint: ">= 9"
     eslint-plugin-sort: ">= 3"
-    eslint-plugin-widen: ">=3.2.0"
+    eslint-plugin-widen: ">=3.2.1"
   languageName: unknown
   linkType: soft
 
@@ -3780,7 +3780,7 @@ __metadata:
     eslint-plugin-react: ">= 7"
     eslint-plugin-react-hooks: ">= 4"
     eslint-plugin-sort: ">= 3"
-    eslint-plugin-widen: ">=3.2.0"
+    eslint-plugin-widen: ">=3.2.1"
     typescript-eslint: ">= 7.16.0"
   peerDependenciesMeta:
     eslint-plugin-jest:

@@ -1,5 +1,11 @@
 # eslint-plugin-widen
 
+## 3.2.1
+
+### Patch Changes
+
+- f285c53: Attempt to fix workspace dependency issues.
+
 ## 3.2.0
 
 ### Minor Changes

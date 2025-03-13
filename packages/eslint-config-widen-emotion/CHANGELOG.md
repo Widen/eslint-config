@@ -1,5 +1,11 @@
 # eslint-config-widen-emotion
 
+## 1.5.1
+
+### Patch Changes
+
+- f285c53: Attempt to fix workspace dependency issues.
+
 ## 1.5.0
 
 ### Minor Changes

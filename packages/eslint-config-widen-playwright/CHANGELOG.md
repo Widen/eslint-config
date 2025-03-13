@@ -1,5 +1,11 @@
 # eslint-config-widen-playwright
 
+## 2.2.1
+
+### Patch Changes
+
+- f285c53: Attempt to fix workspace dependency issues.
+
 ## 2.2.0
 
 ### Minor Changes
