@@ -1,5 +1,16 @@
 # eslint-config-widen-base
 
+## 4.0.0
+
+### Minor Changes
+
+- 279e6bb: Fix ts references.
+
+### Patch Changes
+
+- Updated dependencies [279e6bb]
+  - eslint-plugin-widen@3.2.0
+
 ## 3.0.0
 
 ### Minor Changes

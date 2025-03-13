@@ -1,5 +1,11 @@
 # eslint-plugin-widen
 
+## 3.2.0
+
+### Minor Changes
+
+- 279e6bb: Fix ts references.
+
 ## 3.1.0
 
 ### Minor Changes

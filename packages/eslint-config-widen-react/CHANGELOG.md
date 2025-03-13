@@ -1,5 +1,11 @@
 # eslint-config-widen-react
 
+## 2.3.0
+
+### Minor Changes
+
+- 279e6bb: Fix ts references.
+
 ## 2.2.0
 
 ### Minor Changes

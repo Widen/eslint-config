@@ -1,5 +1,11 @@
 # eslint-playground
 
+## 1.2.0
+
+### Minor Changes
+
+- 279e6bb: Fix ts references.
+
 ## 1.1.0
 
 ### Minor Changes

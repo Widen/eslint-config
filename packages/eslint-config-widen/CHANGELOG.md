@@ -1,5 +1,21 @@
 # eslint-config-widen
 
+## 6.0.0
+
+### Minor Changes
+
+- 279e6bb: Fix ts references.
+
+### Patch Changes
+
+- Updated dependencies [279e6bb]
+  - eslint-config-widen-base@4.0.0
+  - eslint-config-widen-jest@2.2.0
+  - eslint-config-widen-playwright@2.2.0
+  - eslint-config-widen-react@2.3.0
+  - eslint-config-widen-typescript@2.3.0
+  - eslint-plugin-widen@3.2.0
+
 ## 5.0.0
 
 ### Minor Changes

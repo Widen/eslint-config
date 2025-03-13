@@ -1,5 +1,11 @@
 # eslint-config-widen-emotion
 
+## 1.5.0
+
+### Minor Changes
+
+- 279e6bb: Fix ts references.
+
 ## 1.4.0
 
 ### Minor Changes
