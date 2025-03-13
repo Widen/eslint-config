@@ -1,5 +1,11 @@
 # eslint-config-widen
 
+## 6.0.2
+
+### Patch Changes
+
+- 3915867: Fix dependency versions.
+
 ## 6.0.1
 
 ### Patch Changes
