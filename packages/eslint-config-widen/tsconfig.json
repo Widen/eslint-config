@@ -9,5 +9,12 @@
   },
   "paths": {
     "@/*": ["./src/*"]
-  }
+  },
+  "references": [
+    { "path": "../eslint-config-widen-base" },
+    { "path": "../eslint-config-widen-jest" },
+    { "path": "../eslint-config-widen-playwright" },
+    { "path": "../eslint-config-widen-react" },
+    { "path": "../eslint-config-widen-typescript" }
+  ]
 }

@@ -6,6 +6,5 @@ if [[ -z "${CI}" ]]; then
   exit 1
 fi
 
-yarn install
 yarn ts
 yarn changeset publish
