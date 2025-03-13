@@ -1,5 +1,11 @@
 # eslint-plugin-widen
 
+## 3.1.0
+
+### Minor Changes
+
+- d2edd5e: Fix release script.
+
 ## 3.0.0
 
 ### Major Changes

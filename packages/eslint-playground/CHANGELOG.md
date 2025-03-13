@@ -1,5 +1,11 @@
 # eslint-playground
 
+## 1.1.0
+
+### Minor Changes
+
+- d2edd5e: Fix release script.
+
 ## 1.0.2
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # eslint-config-widen-emotion
 
+## 1.4.0
+
+### Minor Changes
+
+- d2edd5e: Fix release script.
+
 ## 1.3.0
 
 ### Minor Changes

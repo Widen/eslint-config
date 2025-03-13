@@ -1,5 +1,11 @@
 # eslint-config-widen-jest
 
+## 2.1.0
+
+### Minor Changes
+
+- d2edd5e: Fix release script.
+
 ## 2.0.0
 
 ### Major Changes
