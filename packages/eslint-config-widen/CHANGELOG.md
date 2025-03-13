@@ -1,5 +1,18 @@
 # eslint-config-widen
 
+## 6.0.1
+
+### Patch Changes
+
+- f285c53: Attempt to fix workspace dependency issues.
+- Updated dependencies [f285c53]
+  - eslint-config-widen-base@4.0.1
+  - eslint-config-widen-jest@2.2.1
+  - eslint-config-widen-playwright@2.2.1
+  - eslint-config-widen-react@2.3.1
+  - eslint-config-widen-typescript@2.3.1
+  - eslint-plugin-widen@3.2.1
+
 ## 6.0.0
 
 ### Minor Changes
