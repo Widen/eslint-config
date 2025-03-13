@@ -47,3 +47,11 @@ export default [
   ...[{ files: ['e2e/**'] }, ...playwright],
 ]
 ```
+
+Individual packages can be pulled down if only a small subset is needed. Each
+package has its own readme that can be referenced for specific dependencies.
+
+```bash
+## (base, emotion, jest, playwright, react, typescript)
+yarn add eslint-config-widen-*
+```

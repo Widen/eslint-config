@@ -3691,7 +3691,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-widen-base@workspace:packages/eslint-config-widen-base":
+"eslint-config-widen-base@workspace:^, eslint-config-widen-base@workspace:packages/eslint-config-widen-base":
   version: 0.0.0-use.local
   resolution: "eslint-config-widen-base@workspace:packages/eslint-config-widen-base"
   dependencies:
@@ -3714,7 +3714,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"eslint-config-widen-jest@workspace:packages/eslint-config-widen-jest":
+"eslint-config-widen-jest@workspace:^, eslint-config-widen-jest@workspace:packages/eslint-config-widen-jest":
   version: 0.0.0-use.local
   resolution: "eslint-config-widen-jest@workspace:packages/eslint-config-widen-jest"
   dependencies:
@@ -3725,7 +3725,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"eslint-config-widen-playwright@workspace:packages/eslint-config-widen-playwright":
+"eslint-config-widen-playwright@workspace:^, eslint-config-widen-playwright@workspace:packages/eslint-config-widen-playwright":
   version: 0.0.0-use.local
   resolution: "eslint-config-widen-playwright@workspace:packages/eslint-config-widen-playwright"
   dependencies:
@@ -3736,7 +3736,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"eslint-config-widen-react@workspace:packages/eslint-config-widen-react":
+"eslint-config-widen-react@workspace:^, eslint-config-widen-react@workspace:packages/eslint-config-widen-react":
   version: 0.0.0-use.local
   resolution: "eslint-config-widen-react@workspace:packages/eslint-config-widen-react"
   dependencies:
@@ -3749,7 +3749,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"eslint-config-widen-typescript@workspace:packages/eslint-config-widen-typescript":
+"eslint-config-widen-typescript@workspace:^, eslint-config-widen-typescript@workspace:packages/eslint-config-widen-typescript":
   version: 0.0.0-use.local
   resolution: "eslint-config-widen-typescript@workspace:packages/eslint-config-widen-typescript"
   dependencies:
@@ -3766,6 +3766,11 @@ __metadata:
   resolution: "eslint-config-widen@workspace:packages/eslint-config-widen"
   dependencies:
     eslint-config-prettier: "npm:^9.1.0"
+    eslint-config-widen-base: "workspace:^"
+    eslint-config-widen-jest: "workspace:^"
+    eslint-config-widen-playwright: "workspace:^"
+    eslint-config-widen-react: "workspace:^"
+    eslint-config-widen-typescript: "workspace:^"
   peerDependencies:
     "@babel/eslint-parser": ^7.22.15
     eslint: ">= 9"

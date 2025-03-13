@@ -3,7 +3,7 @@
   "compilerOptions": {
     "outDir": "lib",
     "rootDir": "src",
-    "module": "esnext",
+    "module": "NodeNext",
     "esModuleInterop": true,
     "target": "es2016"
   },

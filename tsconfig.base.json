@@ -3,7 +3,7 @@
     "module": "CommonJS",
     "target": "esnext",
     "jsx": "preserve",
-    "moduleResolution": "node",
+    "moduleResolution": "nodenext",
     "composite": true,
     "strict": true,
     "skipLibCheck": true
