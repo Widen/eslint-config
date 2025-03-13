@@ -10,4 +10,4 @@
 'eslint-plugin-widen': patch
 ---
 
-Attempt to fix workspace dependecy issues.
+Attempt to fix workspace dependency issues.
