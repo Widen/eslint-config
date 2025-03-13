@@ -48,8 +48,8 @@ export default [
 ]
 ```
 
-You can also pull down individual packages if you only need a small subset. Each
-package has its own readme that you should reference for specific dependencies.
+Individual packages can be pulled down if only a small subset is needed. Each
+package has its own readme that can be referenced for specific dependencies.
 
 ```bash
 ## (base, emotion, jest, playwright, react, typescript)
