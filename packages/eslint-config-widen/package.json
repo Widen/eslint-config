@@ -2,11 +2,11 @@
   "author": "Widen",
   "dependencies": {
     "eslint-config-prettier": "^9.1.0",
-    "eslint-config-widen-base": "workspace:^",
-    "eslint-config-widen-jest": "workspace:^",
-    "eslint-config-widen-playwright": "workspace:^",
-    "eslint-config-widen-react": "workspace:^",
-    "eslint-config-widen-typescript": "workspace:^"
+    "eslint-config-widen-base": "^4.0.1",
+    "eslint-config-widen-jest": "^2.2.1",
+    "eslint-config-widen-playwright": "^2.2.1",
+    "eslint-config-widen-react": "^2.2.1",
+    "eslint-config-widen-typescript": "^2.2.1"
   },
   "description": "Widen's shared ESLint config.",
   "exports": {
