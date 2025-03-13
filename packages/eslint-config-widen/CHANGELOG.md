@@ -1,5 +1,21 @@
 # eslint-config-widen
 
+## 5.0.0
+
+### Minor Changes
+
+- d2edd5e: Fix release script.
+
+### Patch Changes
+
+- Updated dependencies [d2edd5e]
+  - eslint-config-widen-base@3.0.0
+  - eslint-config-widen-jest@2.1.0
+  - eslint-config-widen-playwright@2.1.0
+  - eslint-config-widen-react@2.2.0
+  - eslint-config-widen-typescript@2.2.0
+  - eslint-plugin-widen@3.1.0
+
 ## 4.0.4
 
 ### Patch Changes
