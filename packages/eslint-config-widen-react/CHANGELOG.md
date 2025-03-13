@@ -1,5 +1,11 @@
 # eslint-config-widen-react
 
+## 2.1.0
+
+### Minor Changes
+
+- 8f9d5f7: Update default file type selectors for react and typescript config.
+
 ## 2.0.0
 
 ### Major Changes
