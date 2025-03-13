@@ -1,5 +1,13 @@
 # eslint-config-widen
 
+## 4.0.4
+
+### Patch Changes
+
+- Updated dependencies [8f9d5f7]
+  - eslint-config-widen-typescript@2.1.0
+  - eslint-config-widen-react@2.1.0
+
 ## 4.0.3
 
 ### Patch Changes
