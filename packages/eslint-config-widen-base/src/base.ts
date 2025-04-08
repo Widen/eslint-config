@@ -2,6 +2,7 @@ import babelParser from '@babel/eslint-parser'
 import js from '@eslint/js'
 import prettier from 'eslint-plugin-prettier'
 import sort from 'eslint-plugin-sort'
+import sortDestructureKeys from 'eslint-plugin-sort-destructure-keys'
 import widen from 'eslint-plugin-widen'
 import sharedGlobals from './sharedGlobals.js'
 
@@ -17,8 +18,10 @@ export default [
     plugins: {
       prettier,
       sort,
+      'sort-destructure-keys': sortDestructureKeys,
       widen,
     },
+
     rules: {
       'default-param-last': 'error',
       'dot-notation': 'error',
@@ -82,6 +85,9 @@ export default [
           ],
         },
       ],
+      'sort/object-properties': ['error', { caseSensitive: true }],
+      'sort/string-unions': 'error',
+      'sort-keys': ['error', 'asc', { caseSensitive: true }],
     },
   },
   js.configs.recommended,

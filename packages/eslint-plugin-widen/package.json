@@ -2,9 +2,9 @@
   "author": "Widen",
   "description": "Widen's own ESLint plugin containing custom lint rules for our code.",
   "devDependencies": {
-    "@types/eslint": "^8.56.10",
+    "@types/eslint": "^9.6.1",
     "@types/estree-jsx": "^1.0.5",
-    "eslint": "^9.6.0",
+    "eslint": "^9.24.0",
     "tsheredoc": "^1.0.1"
   },
   "exports": "./lib/index.js",

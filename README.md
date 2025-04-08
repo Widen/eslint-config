@@ -38,7 +38,7 @@ export default [
   ...react,
   ...[
     // you can specify what to ignore by using the `ignores` key before any other rule
-    // this will filter out things we dont want this to run on
+    // this will filter out things we don't want this to run on
     { ignores: ['*.test.*'] },
     ...jest,
     // you can also override rules by specifying the rule and the new value

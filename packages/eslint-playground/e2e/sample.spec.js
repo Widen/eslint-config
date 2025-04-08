@@ -8,4 +8,10 @@ test.describe('Sample', () => {
     console.log('wow')
     await page.goto('https://playwright.dev/')
   })
+
+  test.skip('foo', ({page}) => {
+    await page.goto('https://playwright.dev/')
+    expect(page).toBeAccessible()
+  })
+  
 })
