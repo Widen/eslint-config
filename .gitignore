@@ -1,5 +1,6 @@
 # Editors
 .vscode/
+!.vscode/settings.json
 
 # Yarn
 node_modules/
@@ -12,3 +13,6 @@ node_modules/
 # Outputs
 lib/
 tsconfig.tsbuildinfo
+
+#Other
+.DS_Store
