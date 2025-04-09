@@ -36,6 +36,11 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Exit Pre-release Mode
+        run: yarn changeset pre exit
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Publish Pre-release
         run: |
           echo "Publishing pre-release with tag: ${{ github.event.inputs.preid || 'beta' }}"
@@ -43,8 +48,3 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-
-      - name: Exit Pre-release Mode
-        run: yarn changeset pre exit
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
