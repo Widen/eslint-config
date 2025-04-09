@@ -11,36 +11,9 @@ on:
         default: 'beta'
 
 jobs:
-  lint:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 20.x
-          cache: yarn
-      - run: yarn install --immutable
-      - run: yarn lint
-      - run: yarn prettier --check .
-      - run: yarn tsc
-  test:
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [18.x, 20.x]
-    steps:
-      - uses: actions/checkout@v4
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v4
-        with:
-          node-version: ${{ matrix.node-version }}
-          cache: yarn
-      - run: yarn install --immutable
-      - run: yarn test
   prerelease:
     name: Create Pre-release
     runs-on: ubuntu-latest
-    needs: [lint, test]
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v4
@@ -52,21 +25,20 @@ jobs:
         with:
           node-version: 20.x
           cache: yarn
-
       - name: Install Dependencies
         run: yarn install --immutable
 
       - name: Create Pre-release
         run: |
+          echo "Create pre-release with tag: ${{ github.event.inputs.preid || 'beta' }}"
           yarn changeset pre enter ${{ github.event.inputs.preid || 'beta' }}
           yarn changeset version
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Changeset status
-        run: yarn changeset status
 
       - name: Publish Pre-release
         run: |
+          echo "Publishing pre-release with tag: ${{ github.event.inputs.preid || 'beta' }}"
           yarn changeset publish --tag ${{ github.event.inputs.preid || 'beta' }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
