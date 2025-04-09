@@ -63,8 +63,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Build
-        run: yarn build
+      - name: Build TS
+        run: yarn ts
 
       - name: Publish Pre-release
         run: |
