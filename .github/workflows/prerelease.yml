@@ -65,6 +65,7 @@ jobs:
 
       - name: Publish Pre-release
         run: |
+          yarn changeset status
           yarn changeset publish --tag ${{ github.event.inputs.preid || 'beta' }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
