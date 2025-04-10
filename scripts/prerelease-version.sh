@@ -7,8 +7,9 @@ if [[ -z "${CI}" ]]; then
 fi
 
 # Enter pre-release mode
-echo "Create pre-release with tag: ${{ github.event.inputs.preid || 'beta' }}"
-yarn changeset pre enter ${{ github.event.inputs.preid || 'beta' }}
+PREID=${GITHUB_EVENT_INPUTS_PREID:-beta}
+echo "Create pre-release with tag: $PREID"
+yarn changeset pre enter "$PREID"
 
 # Update changelogs and manifests
 echo "Update changelogs and manifests for pre-release version"
