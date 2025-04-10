@@ -1,5 +1,11 @@
 # eslint-playground
 
+## 1.3.0-beta.0
+
+### Minor Changes
+
+- 9a878fe: Add sort destructure keys and updates dependencies.
+
 ## 1.2.1
 
 ### Patch Changes

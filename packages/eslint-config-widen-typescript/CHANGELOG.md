@@ -1,5 +1,11 @@
 # eslint-config-widen-typescript
 
+## 2.4.0-beta.0
+
+### Minor Changes
+
+- 9a878fe: Add sort destructure keys and updates dependencies.
+
 ## 2.3.1
 
 ### Patch Changes

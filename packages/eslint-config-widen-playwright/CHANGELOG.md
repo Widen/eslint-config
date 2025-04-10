@@ -1,5 +1,11 @@
 # eslint-config-widen-playwright
 
+## 2.3.0-beta.0
+
+### Minor Changes
+
+- 9a878fe: Add sort destructure keys and updates dependencies.
+
 ## 2.2.1
 
 ### Patch Changes

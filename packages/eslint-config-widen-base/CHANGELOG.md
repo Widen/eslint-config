@@ -1,5 +1,11 @@
 # eslint-config-widen-base
 
+## 4.1.0-beta.0
+
+### Minor Changes
+
+- 9a878fe: Add sort destructure keys and updates dependencies.
+
 ## 4.0.1
 
 ### Patch Changes
