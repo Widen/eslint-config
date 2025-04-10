@@ -11,6 +11,7 @@
     "@/*": ["./src/*"]
   },
   "references": [
+    { "path": "../eslint-plugin-widen" },
     { "path": "../eslint-config-widen-base" },
     { "path": "../eslint-config-widen-jest" },
     { "path": "../eslint-config-widen-playwright" },
