@@ -3,7 +3,7 @@ on:
   push:
     branches:
       - beta # or any branch you want to trigger pre-releases from
-  workflow_dispatch:
+  workflow_dispatch: # or manually trigger
     inputs:
       preid:
         description: 'Pre-release identifier (e.g., beta, alpha)'
@@ -29,22 +29,11 @@ jobs:
         run: yarn install --immutable
 
       - name: Create Pre-release
-        run: |
-          echo "Create pre-release with tag: ${{ github.event.inputs.preid || 'beta' }}"
-          yarn changeset pre enter ${{ github.event.inputs.preid || 'beta' }}
-          yarn changeset version
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Exit Pre-release Mode
-        run: yarn changeset pre exit
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Publish Pre-release
-        run: |
-          echo "Publishing pre-release with tag: ${{ github.event.inputs.preid || 'beta' }}"
-          yarn changeset publish --tag ${{ github.event.inputs.preid || 'beta' }}
+        id: changesets
+        uses: changesets/action@v1
+        with:
+          publish: ./scripts/prerelease-release.sh
+          version: ./scripts/prerelease-version.sh
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
