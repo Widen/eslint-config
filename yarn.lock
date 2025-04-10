@@ -3543,7 +3543,6 @@ __metadata:
     eslint-plugin-react-hooks: "npm:^5.2.0"
     eslint-plugin-sort: "npm:^4.0.0"
     eslint-plugin-sort-destructure-keys: "npm:^2.0.0"
-    eslint-plugin-widen: "workspace:^"
     typescript: "npm:^5.8.3"
     typescript-eslint: "npm:^8.29.1"
   peerDependencies:
