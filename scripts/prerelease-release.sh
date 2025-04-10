@@ -6,5 +6,7 @@ if [[ -z "${CI}" ]]; then
   exit 1
 fi
 
-echo "Publishing pre-release with tag: ${{ github.event.inputs.preid || 'beta' }}"
-yarn changeset publish --tag ${{ github.event.inputs.preid || 'beta' }}
+# Publish pre-release version
+PREID=${GITHUB_EVENT_INPUTS_PREID:-beta}
+echo "Create pre-release with tag: $PREID"
+yarn changeset publish --tag "$PREID"
