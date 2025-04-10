@@ -28,6 +28,11 @@ jobs:
       - name: Install Dependencies
         run: yarn install --immutable
 
+      - name: Authenticate with npm
+        run: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
       - name: Create Pre-release
         run: |
           echo "Create pre-release with tag: ${{ github.event.inputs.preid || 'beta' }}"
@@ -48,4 +53,3 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-  
