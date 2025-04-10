@@ -29,11 +29,23 @@ jobs:
         run: yarn install --immutable
 
       - name: Create Pre-release
-        id: changesets
-        uses: changesets/action@v1
-        with:
-          publish: ./scripts/prerelease-release.sh
-          version: ./scripts/prerelease-version.sh
+        run: |
+          echo "Create pre-release with tag: ${{ github.event.inputs.preid || 'beta' }}"
+          yarn changeset pre enter ${{ github.event.inputs.preid || 'beta' }}
+          yarn changeset version
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Exit Pre-release Mode
+        run: yarn changeset pre exit
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Publish Pre-release
+        run: |
+          echo "Publishing pre-release with tag: ${{ github.event.inputs.preid || 'beta' }}"
+          yarn changeset publish --tag ${{ github.event.inputs.preid || 'beta' }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+  
