@@ -21,6 +21,7 @@ export default {
           node.specifiers.forEach((specifier) => {
             if (
               specifier.type === 'ImportSpecifier' &&
+              specifier.imported.type === 'Identifier' &&
               specifier.imported.name === 'Fragment'
             ) {
               fragmentName = specifier.local.name
