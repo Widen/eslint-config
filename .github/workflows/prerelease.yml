@@ -23,8 +23,8 @@ jobs:
       - run: yarn lint
       - run: yarn prettier --check .
       - run: yarn tsc
-  
-      test:
+
+  test:
     runs-on: ubuntu-latest
     strategy:
       matrix:
