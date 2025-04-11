@@ -84,7 +84,11 @@ export default {
           emotionReactImport = node
           hasJsxImport = node.specifiers
             .filter(isImportSpecifier)
-            .some((spec) => spec.imported.name === 'jsx')
+            .some(
+              (spec) =>
+                spec.imported.type === 'Identifier' &&
+                spec.imported.name === 'jsx',
+            )
         }
       },
       JSXAttribute(node: ESTree.Node) {
