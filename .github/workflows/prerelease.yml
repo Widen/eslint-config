@@ -11,9 +11,38 @@ on:
         default: 'beta'
 
 jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20.x
+          cache: yarn
+      - run: yarn install --immutable
+      - run: yarn lint
+      - run: yarn prettier --check .
+      - run: yarn tsc
+  
+      test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [18.x, 20.x]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: yarn
+      - run: yarn install --immutable
+      - run: yarn test
+
   prerelease:
     name: Create Pre-release
     runs-on: ubuntu-latest
+    needs: [lint, test]
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v4
@@ -36,15 +65,14 @@ jobs:
 
       - name: Enter Pre-release Mode
         run: |
-          echo "Entering pre-release mode with tag: ${{ github.event.inputs.preid || 'beta' }}"
-          yarn changeset pre enter ${{ github.event.inputs.preid || 'beta' }}
+          TIMESTAMP=$(date +%s)
+          echo "Entering pre-release mode with tag: ${{ github.event.inputs.preid || 'beta' }}-${TIMESTAMP}"
+          yarn changeset pre enter "${{ github.event.inputs.preid || 'beta' }}-${TIMESTAMP}"
 
-      - name: Force Increment Pre-release Version
+      - name: Increment Pre-release Version
         run: |
-          echo "Forcing pre-release version increment"
+          echo "Pre-release version increment"
           yarn changeset version
-          git add .
-          git commit -m "chore: bump pre-release version [skip ci]" || echo "No changes to commit"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -55,10 +83,16 @@ jobs:
 
       - name: Publish Pre-release
         run: |
-          echo "Publishing pre-release with tag: ${{ github.event.inputs.preid || 'beta' }}"
+          echo "Publishing pre-release with tag: ${{ github.event.inputs.preid || 'beta' }}-${TIMESTAMP}"
           echo "Typescript version: $(tsc --version)"          
           yarn ts
-          yarn changeset publish --tag ${{ github.event.inputs.preid || 'beta' }}
+          yarn changeset publish --tag "${{ github.event.inputs.preid || 'beta' }}-${TIMESTAMP}"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Cleanup Temporary Files
+        if: always()
+        run: |
+          echo "Cleaning up temporary files"
+          rm -f ~/.npmrc
