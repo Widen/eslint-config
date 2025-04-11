@@ -49,6 +49,7 @@ jobs:
       - name: Publish Pre-release
         run: |
           echo "Publishing pre-release with tag: ${{ github.event.inputs.preid || 'beta' }}"
+          yarn ts
           yarn changeset publish --tag ${{ github.event.inputs.preid || 'beta' }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
