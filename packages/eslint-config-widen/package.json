@@ -1,17 +1,17 @@
 {
   "author": "Widen",
   "dependencies": {
-    "eslint-config-prettier": "^10.1.1"
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-config-widen-base": "workspace:^",
+    "eslint-config-widen-jest": "workspace:^",
+    "eslint-config-widen-playwright": "workspace:^",
+    "eslint-config-widen-react": "workspace:^",
+    "eslint-config-widen-typescript": "workspace:^"
   },
   "devDependencies": {
     "@babel/core": "^7.26.10",
     "@babel/eslint-parser": "^7.27.0",
     "eslint": "^9.24.0",
-    "eslint-config-widen-base": "workspace:^",
-    "eslint-config-widen-jest": "workspace:^",
-    "eslint-config-widen-playwright": "workspace:^",
-    "eslint-config-widen-react": "workspace:^",
-    "eslint-config-widen-typescript": "workspace:^",
     "eslint-plugin-jest": "^28.11.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-playwright": "^2.2.0",
