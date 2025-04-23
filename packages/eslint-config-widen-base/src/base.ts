@@ -86,10 +86,10 @@ export default [
         },
       ],
       'sort/object-properties': ['error', { caseSensitive: true }],
-      'sort/string-unions': 'error',      
+      'sort/string-unions': 'error',
       'sort-destructure-keys/sort-destructure-keys': [
         'error',
-        { caseSensitive: false }
+        { caseSensitive: false },
       ], // sort destructured keys, including props specified for functional components
       'sort-keys': ['error', 'asc', { caseSensitive: true }],
     },
