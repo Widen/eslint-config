@@ -3452,12 +3452,12 @@ __metadata:
   dependencies:
     eslint: "npm:^9.24.0"
     eslint-config-prettier: "npm:^10.1.1"
+    eslint-plugin-sort-destructure-keys: "npm:^2.0.0"
     eslint-plugin-widen: "workspace:^"
   peerDependencies:
     "@babel/eslint-parser": ^7.26.10
     eslint: ">= 9"
     eslint-plugin-sort: ">= 4"
-    eslint-plugin-sort-destructure-keys: ">= 2"
   languageName: unknown
   linkType: soft
 
@@ -3542,7 +3542,6 @@ __metadata:
     eslint-plugin-react: "npm:^7.37.5"
     eslint-plugin-react-hooks: "npm:^5.2.0"
     eslint-plugin-sort: "npm:^4.0.0"
-    eslint-plugin-sort-destructure-keys: "npm:^2.0.0"
     typescript: "npm:^5.8.3"
     typescript-eslint: "npm:^8.29.1"
   peerDependencies:
