@@ -22,7 +22,9 @@
   "peerDependencies": {
     "@babel/eslint-parser": "^7.26.10",
     "eslint": ">= 9",
-    "eslint-plugin-sort": ">= 4"
+    "eslint-plugin-prettier": ">= 5",
+    "eslint-plugin-sort": ">= 4",
+    "prettier": ">= 3"
   },
   "repository": {
     "directory": "packages/eslint-config-widen-base",

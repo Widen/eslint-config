@@ -3457,7 +3457,9 @@ __metadata:
   peerDependencies:
     "@babel/eslint-parser": ^7.26.10
     eslint: ">= 9"
+    eslint-plugin-prettier: ">= 5"
     eslint-plugin-sort: ">= 4"
+    prettier: ">= 3"
   languageName: unknown
   linkType: soft
 
@@ -3539,9 +3541,11 @@ __metadata:
     eslint-plugin-jest: "npm:^28.11.0"
     eslint-plugin-jsx-a11y: "npm:^6.10.2"
     eslint-plugin-playwright: "npm:^2.2.0"
+    eslint-plugin-prettier: "npm:^5.2.6"
     eslint-plugin-react: "npm:^7.37.5"
     eslint-plugin-react-hooks: "npm:^5.2.0"
     eslint-plugin-sort: "npm:^4.0.0"
+    prettier: "npm:^3.5.3"
     typescript: "npm:^5.8.3"
     typescript-eslint: "npm:^8.29.1"
   peerDependencies:
