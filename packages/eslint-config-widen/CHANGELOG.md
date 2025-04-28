@@ -1,5 +1,20 @@
 # eslint-config-widen
 
+## 6.1.0
+
+### Minor Changes
+
+- b45e670: Add sort destructure keys and updates dependencies.
+
+### Patch Changes
+
+- Updated dependencies [b45e670]
+  - eslint-config-widen-playwright@2.3.0
+  - eslint-config-widen-typescript@2.4.0
+  - eslint-config-widen-react@2.4.0
+  - eslint-config-widen-base@4.1.0
+  - eslint-config-widen-jest@2.3.0
+
 ## 6.0.2
 
 ### Patch Changes
