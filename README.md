@@ -111,4 +111,5 @@ Use `eslint-playground` to test linting rules.
 
 ## Pre-releases
 
-Use the GitHub Action for Pre-release to test out eslint changes within projects.
+Use the GitHub Action for Pre-release to test out eslint changes within
+projects.
