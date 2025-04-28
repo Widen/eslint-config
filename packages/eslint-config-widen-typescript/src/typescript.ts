@@ -27,12 +27,16 @@ export default [
       '@typescript-eslint/no-unused-vars': [
         'error',
         {
+          argsIgnorePattern: '^_',
+          caughtErrorsIgnorePattern: '^_',
+          destructuredArrayIgnorePattern: '^_',
           ignoreRestSiblings: true,
           varsIgnorePattern: '^_',
         },
       ],
       '@typescript-eslint/no-var-requires': 'off',
       '@typescript-eslint/prefer-interface': 'off',
+      'sort/string-unions': 'error',
       'sort/type-properties': 'warn',
     },
   },

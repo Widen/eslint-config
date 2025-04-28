@@ -4,3 +4,6 @@
 
 # Outputs
 lib/
+
+# Ignore test files that intentionally have linting errors
+packages/eslint-playground

@@ -5,7 +5,7 @@ Widen's shared ESLint config base module
 ## Installation
 
 ```bash
-yarn add -D eslint eslint-plugin-widen eslint-config-widen-base eslint-plugin-sort @babel/{core,eslint-parser}
+yarn add -D eslint eslint-plugin-widen eslint-config-widen-base eslint-plugin-sort eslint-plugin-prettier prettier @babel/{core,eslint-parser}
 ```
 
 ## Usage

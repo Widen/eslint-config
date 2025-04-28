@@ -1,7 +1,12 @@
 {
   "author": "Widen",
   "dependencies": {
-    "eslint-config-prettier": "^9.1.0"
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-sort-destructure-keys": "^2.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.24.0",
+    "eslint-plugin-widen": "workspace:^"
   },
   "description": "Widen's shared ESLint base config.",
   "exports": {
@@ -15,10 +20,11 @@
   "license": "ISC",
   "name": "eslint-config-widen-base",
   "peerDependencies": {
-    "@babel/eslint-parser": "^7.22.15",
+    "@babel/eslint-parser": "^7.26.10",
     "eslint": ">= 9",
-    "eslint-plugin-sort": ">= 3",
-    "eslint-plugin-widen": ">=3.2.1"
+    "eslint-plugin-prettier": ">= 5",
+    "eslint-plugin-sort": ">= 4",
+    "prettier": ">= 3"
   },
   "repository": {
     "directory": "packages/eslint-config-widen-base",

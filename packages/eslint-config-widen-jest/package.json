@@ -1,7 +1,10 @@
 {
   "author": "Widen",
   "dependencies": {
-    "eslint-config-prettier": "^9.1.0"
+    "eslint-config-prettier": "^10.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^9.24.0"
   },
   "description": "Widen's shared ESLint config for Jest.",
   "exports": {

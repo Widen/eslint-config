@@ -9,5 +9,6 @@
   },
   "paths": {
     "@/*": ["./src/*"]
-  }
+  },
+  "references": [{ "path": "../eslint-plugin-widen" }]
 }
