@@ -1,5 +1,11 @@
 # eslint-config-widen-emotion
 
+## 1.6.0
+
+### Minor Changes
+
+- b45e670: Add sort destructure keys and updates dependencies.
+
 ## 1.5.1
 
 ### Patch Changes

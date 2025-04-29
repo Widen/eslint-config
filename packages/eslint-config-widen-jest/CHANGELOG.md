@@ -1,5 +1,11 @@
 # eslint-config-widen-jest
 
+## 2.3.0
+
+### Minor Changes
+
+- b45e670: Add sort destructure keys and updates dependencies.
+
 ## 2.2.1
 
 ### Patch Changes
