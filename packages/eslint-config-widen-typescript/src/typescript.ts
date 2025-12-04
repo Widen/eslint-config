@@ -1,7 +1,8 @@
+import type { Linter } from 'eslint'
 import sort from 'eslint-plugin-sort'
 import { configs, parser, plugin } from 'typescript-eslint'
 
-export default [
+const config: Linter.Config[] = [
   ...configs.recommended,
   {
     files: ['**/*.{ts,tsx}'],
@@ -41,3 +42,5 @@ export default [
     },
   },
 ]
+
+export default config

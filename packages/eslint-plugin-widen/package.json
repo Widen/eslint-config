@@ -4,7 +4,7 @@
   "devDependencies": {
     "@types/eslint": "^9.6.1",
     "@types/estree-jsx": "^1.0.5",
-    "eslint": "^9.24.0",
+    "eslint": "^9.39.1",
     "tsheredoc": "^1.0.1"
   },
   "exports": "./lib/index.js",
