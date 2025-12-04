@@ -1,5 +1,11 @@
 # eslint-config-widen-emotion
 
+## 2.0.0
+
+### Major Changes
+
+- 1e15712: Update all versions to the latest.
+
 ## 1.6.0
 
 ### Minor Changes
