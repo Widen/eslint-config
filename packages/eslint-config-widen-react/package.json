@@ -21,7 +21,7 @@
     "eslint": ">= 9",
     "eslint-plugin-jsx-a11y": ">= 6",
     "eslint-plugin-react": ">= 7",
-    "eslint-plugin-react-hooks": ">= 4"
+    "eslint-plugin-react-hooks": ">= 5"
   },
   "repository": {
     "directory": "packages/eslint-config-widen-react",

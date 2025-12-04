@@ -19,7 +19,7 @@
   "name": "eslint-config-widen-jest",
   "peerDependencies": {
     "eslint": ">= 9",
-    "eslint-plugin-jest": ">= 28"
+    "eslint-plugin-jest": ">= 29"
   },
   "repository": {
     "directory": "packages/eslint-config-widen-jest",
