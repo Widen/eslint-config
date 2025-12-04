@@ -200,7 +200,6 @@
 ### Minor Changes
 
 - 199c091: Enable a number of new ESLint rules:
-
   - [camelcase](https://eslint.org/docs/rules/camelcase)
   - [default-param-last](https://eslint.org/docs/rules/default-param-last)
   - [dot-notation](https://eslint.org/docs/rules/dot-notation)

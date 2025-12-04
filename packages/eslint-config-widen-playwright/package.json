@@ -1,10 +1,10 @@
 {
   "author": "Widen",
   "dependencies": {
-    "eslint-config-prettier": "^10.1.1"
+    "eslint-config-prettier": "^10.1.8"
   },
   "devDependencies": {
-    "eslint": "^9.24.0"
+    "eslint": "^9.39.1"
   },
   "description": "Widen's shared ESLint config for Playwright.",
   "exports": {
