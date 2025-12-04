@@ -1,5 +1,11 @@
 # eslint-config-widen-base
 
+## 5.0.0
+
+### Major Changes
+
+- 1e15712: Update all versions to the latest.
+
 ## 4.1.0
 
 ### Minor Changes

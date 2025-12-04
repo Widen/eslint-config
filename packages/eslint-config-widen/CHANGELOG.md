@@ -1,5 +1,20 @@
 # eslint-config-widen
 
+## 7.0.0
+
+### Major Changes
+
+- 1e15712: Update all versions to the latest.
+
+### Patch Changes
+
+- Updated dependencies [1e15712]
+  - eslint-config-widen-playwright@3.0.0
+  - eslint-config-widen-typescript@3.0.0
+  - eslint-config-widen-react@3.0.0
+  - eslint-config-widen-base@5.0.0
+  - eslint-config-widen-jest@3.0.0
+
 ## 6.1.0
 
 ### Minor Changes

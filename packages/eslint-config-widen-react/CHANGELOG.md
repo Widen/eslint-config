@@ -1,5 +1,11 @@
 # eslint-config-widen-react
 
+## 3.0.0
+
+### Major Changes
+
+- 1e15712: Update all versions to the latest.
+
 ## 2.4.0
 
 ### Minor Changes
